@@ -1,0 +1,19 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+body {
+    background-color: white;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}

@@ -1,0 +1,132 @@
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 50px);
+
+
+    img {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: auto;
+    }
+
+    .description {
+        width: 100%;
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        span {
+            color: $primary-color;
+        }
+    }
+}
+
+
+// -----------------------------------------------------------------
+// ------------------- Skills --------------------------------------
+// -----------------------------------------------------------------
+
+
+.main {
+    box-shadow: 0 -1px 4px 2px $secondary-color;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        position: relative;
+        padding: 5px 0;
+        font-size: .7rem;
+        margin-bottom: 20px;
+
+        span {
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: checkMore 2s infinite linear both;
+        }
+    }
+
+    ul {
+        display: flex;
+
+        margin: 20px 0;
+        padding: 0;
+
+        li:nth-child(1) {
+            padding: 5px;
+            border: 1px solid $secondary-color;
+            border-radius: 5px 0 0 5px;
+        }
+
+        li:nth-child(2) {
+            padding: 5px;
+            border: 1px solid $secondary-color;
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+        }
+
+        li.checked {
+            color: white;
+            background-color: $primary-color;
+            border: 1px solid $primary-color;
+        }
+    }
+
+}
+
+@keyframes checkMore {
+    0% {}
+
+    15% {
+        text-shadow: 0 5px;
+    }
+
+    30% {
+        text-shadow: 0 5px, 0 10px;
+    }
+
+    45% {
+        text-shadow: 0 5px, 0 10px;
+    }
+
+    60% {
+        text-shadow: 0 5px;
+    }
+
+    75% {
+        text-shadow: none;
+    }
+
+
+}
+
+.skillContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .imgBorder {
+        margin-top: 20px;
+        border: 1px solid $secondary-color;
+        padding: 40px;
+        border-radius: 50%;
+    }
+
+    p {
+        width: 80%;
+        font-size: .9rem;
+    }
+}

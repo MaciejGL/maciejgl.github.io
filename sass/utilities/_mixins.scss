@@ -1,0 +1,56 @@
+//  Buttons color
+
+@mixin buttons($map) {
+
+    @each $key,
+    $color in $map {
+        &.#{$key} {
+            background-color: $color;
+        }
+    }
+}
+
+
+// Flex base
+@mixin flex($disp: flex, $dir: null) {
+    display: $disp;
+    flex-direction: $dir;
+    @content;
+}
+
+
+// Img resize
+@mixin imgSize($disp: block, $mside: auto) {
+    display: $disp;
+    margin-left: $mside;
+    margin-right: $mside;
+    @content;
+}
+
+// center margin
+@mixin autoMargin {
+    margin-left: auto;
+    margin-right: auto;
+    @content;
+}
+
+// IMG
+
+@mixin image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-width: 100%;
+    @content;
+}
+
+
+// Media Query OWN
+@mixin mq($size) {
+    @if $size==$breakpoint {
+        @media (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}

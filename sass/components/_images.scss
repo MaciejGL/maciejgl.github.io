@@ -1,0 +1,43 @@
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+svg {
+    display: block;
+    height: 15px;
+    width: 15px;
+    fill: $secondary-color;
+}
+
+.header {
+    // background-color: rgba(0, 0, 0, 0.025);
+    overflow: hidden;
+
+
+    img {
+        @include autoMargin;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: grayscale(1);
+        height: 75%;
+        z-index: -2;
+        animation: headerImage 2s both;
+
+    }
+}
+
+@keyframes headerImage {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.15;
+    }
+}
+
+
+article img {
+    width: 80px;
+}

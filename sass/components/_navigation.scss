@@ -1,0 +1,94 @@
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+:root {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: -204px;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    transition: .5s;
+
+    &.show {
+        top: 0;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        // flex-direction: column;
+
+
+    }
+
+    li {
+        flex-basis: 50%;
+    }
+
+    li:nth-child(1) {
+        border-right: 1px solid $secondary-color;
+        border-bottom: 1px solid $secondary-color;
+    }
+
+    li:nth-child(2) {
+        border-bottom: 1px solid $secondary-color;
+    }
+
+    li:nth-child(3) {
+        border-right: 1px solid $secondary-color;
+    }
+
+
+
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 15px;
+        font-size: 1.1rem;
+
+        svg {
+            margin: 3px 0;
+        }
+    }
+
+    .burger {
+        display: block;
+        position: fixed;
+        color: $secondary-color;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        transition: .5s;
+
+        &.show {
+            top: 215px
+        }
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .fa-bars.show {
+        display: block;
+    }
+
+    .fa-times {
+        display: none;
+    }
+
+    .fa-times.show {
+        display: block;
+    }
+
+}
