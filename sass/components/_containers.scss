@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 50px);
+    background-color: $bgc-color;
 
 
     img {
@@ -19,11 +20,8 @@
 
         h1,
         h2 {
+            margin: 8px 0;
             text-align: center;
-        }
-
-        span {
-            color: $primary-color;
         }
     }
 }
@@ -33,15 +31,18 @@
 // ------------------- Skills --------------------------------------
 // -----------------------------------------------------------------
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .main {
     box-shadow: 0 -1px 4px 2px $secondary-color;
 }
 
 .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 
     a {
         position: relative;
@@ -60,14 +61,16 @@
 
     ul {
         display: flex;
-
+        color: $secondary-color;
         margin: 20px 0;
         padding: 0;
 
         li:nth-child(1) {
             padding: 5px;
             border: 1px solid $secondary-color;
+            border-right: none;
             border-radius: 5px 0 0 5px;
+            transition: .2s;
         }
 
         li:nth-child(2) {
@@ -112,11 +115,15 @@
 
 }
 
+
+
 .skillContainer {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    opacity: 0;
+    transition: 1s;
 
     .imgBorder {
         margin-top: 20px;
@@ -127,6 +134,212 @@
 
     p {
         width: 80%;
-        font-size: .9rem;
+    }
+
+    &.toLearn {
+        display: none;
+    }
+
+    &.visible {
+        opacity: 1;
+        display: flex;
+    }
+
+    .images {
+        margin: 20px 0;
+
+        img {
+            margin: 10px;
+        }
+    }
+}
+
+
+// PROJECTS SECTION ---------------------------------------------------------------------------
+// PROJECTS SECTION ---------------------------------------------------------------------------
+// PROJECTS SECTION ---------------------------------------------------------------------------
+
+.latestProject {
+    background-color: $bgc-color;
+
+    padding: 30px 0;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+
+    .projectImages {
+        position: relative;
+        height: 250px;
+        margin: 15px 0;
+        perspective: 800px;
+        perspective-origin: 100% 100%;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 90%;
+            width: auto;
+            transform: rotateY(20deg) rotateX(0deg) translateX(-60%);
+            box-shadow: 0 0 3px 0 black;
+            transition: .4s;
+
+            &:nth-child(2) {
+                top: -5px;
+                left: 25px
+            }
+
+            &:nth-child(3) {
+                left: 50px;
+                top: -10px;
+            }
+
+        }
+
+        &.clicked {
+            img {
+                transform: translateX(-50%);
+                height: 70%;
+
+                &:nth-child(1) {
+                    top: 0;
+                    left: -70px
+                }
+
+                &:nth-child(2) {
+                    top: 0;
+                    left: 70px
+                }
+
+                &:nth-child(3) {
+                    left: 0;
+                    top: 30%
+                }
+            }
+        }
+
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        text-align: center;
+        width: 90%;
+    }
+
+    a:hover {
+        color: white
+    }
+
+    a:nth-last-of-type(1) {
+        margin-top: 5px;
+    }
+}
+
+// POKE ------------------------------------------------------------------------------
+// POKE ------------------------------------------------------------------------------
+// POKE ------------------------------------------------------------------------------
+
+.poke {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 200px;
+    background-color: $primary-color-transparent;
+    overflow: hidden;
+
+    p {
+        color: white;
+    }
+
+    a.button {
+        color: white;
+        border-color: white;
+
+        &:hover {
+            color: $primary-color;
+            background-color: #fff;
+
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 200px;
+        width: 100%;
+        image-orientation: 50% 50%;
+        z-index: -1;
+    }
+}
+
+
+// Profile --------------------------------------------------------------------------------
+// Profile --------------------------------------------------------------------------------
+// Profile --------------------------------------------------------------------------------
+
+.profile {
+    @include flex($dir: column);
+
+    h1 {
+        margin: 40px 0;
+    }
+
+    img {
+        display: block;
+        border-radius: 50%;
+        width: 130px;
+        box-shadow: 0 0 5px 5px white, 0 0 0 8px $primary-color, 0 0 4px 10px $primary-color;
+    }
+
+    h3 {
+        margin: 40px 0 0;
+    }
+
+    h4 {
+        color: $secondary-color;
+        margin: 5px 0 25px;
+    }
+
+    p {
+        width: 90%;
+        text-align: center;
+    }
+
+    h2 {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+// Abilities ----------------------------------------------------------------------------------
+// Abilities ----------------------------------------------------------------------------------
+// Abilities ----------------------------------------------------------------------------------
+
+
+.abilities {
+    @include flex($dir: column);
+    margin: 50px 0;
+    padding: 50px 0;
+    background-color: $dark-color;
+
+    img:nth-child(1),
+    img:nth-child(2) {
+        transform: translateX(5px);
+    }
+
+    p {
+        color: #eee
     }
 }

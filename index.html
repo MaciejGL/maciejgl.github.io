@@ -38,31 +38,60 @@
                 <!-- <h2><span>D</span>reamer</h2>
                 <h2><span>C</span>hef</h2> -->
             </div>
-            <button>Contact</button>
+            <a class="button" href="#contact">Contact</a>
         </header>
 
         <main class="main">
             <section class="skills" id="skills">
                 <a href="#skills"><span><i class="fas fa-chevron-down"></i></span>Check more</a>
-                <h1>My skills</h1>
+                <h1>My <span>S</span>kills</h1>
                 <ul>
-                    <li class="checked">I've learned</li>
-                    <li>I'm learning</li>
+                    <li class="checked" id="learned">I've learned</li>
+                    <li id="toLearn">I'm learning</li>
                 </ul>
                 <article>
-                    <div class="skillContainer">
+                    <div class="skillContainer learned visible" id="learnedSkill">
                         <div class="imgBorder"><img src="images/html.png" alt="HTML logo"></div>
                         <h3>HTML</h3>
-                        <p>I know HTML5 and how valuable are semantic markups. Deep understanding of correct using HTML
+                        <p>I know HTML5 and how valuable are semantic markups. Deep understanding of correct using
+                            HTML
                             helps me to construct readable sites. </p>
                     </div>
-                    <div class="skillContainer">
+                    <div class="skillContainer learned visible" id="learnedSkill">
                         <div class="imgBorder"><img src="images/css.png" alt="CSS logo"></div>
                         <h3>CSS</h3>
                         <p>In my projects I learned how to create responsive good looking websites. I feel very
                             confident with Flex and Grid. Also can use Sass/Scss.</p>
                     </div>
-                    <div class="skillContainer">
+                    <div class="skillContainer learned visible" id="learnedSkill">
+                        <div class="imgBorder"><img src="images/javascript.jpg" alt="JavaScript logo"></div>
+                        <h3>JavaScript</h3>
+                        <p>The logic of JavaScript seems to be difficult but everyday by practicind code I feel more
+                            confident. I understand ES6, OOP, DOM manipulations, Api etc.</p>
+                    </div>
+                    <div class="skillContainer learned visible" id="learnedSkill">
+
+                        <h3>and few more...</h3>
+                        <div class="images">
+                            <img src="images/bootstrap.png" alt="JavaScript logo">
+                            <img src="images/jquery.jpg" alt="JavaScript logo">
+                            <img src="images/sass.png" alt="JavaScript logo">
+                        </div>
+                    </div>
+                    <div class="skillContainer toLearn" id="skillToLearn">
+                        <div class="imgBorder"><img src="images/html.png" alt="HTML logo"></div>
+                        <h3>React.js</h3>
+                        <p>I know HTML5 and how valuable are semantic markups. Deep understanding of correct using
+                            HTML
+                            helps me to construct readable sites. </p>
+                    </div>
+                    <div class="skillContainer toLearn" id="skillToLearn">
+                        <div class="imgBorder"><img src="images/css.png" alt="CSS logo"></div>
+                        <h3>CSS</h3>
+                        <p>In my projects I learned how to create responsive good looking websites. I feel very
+                            confident with Flex and Grid. Also can use Sass/Scss.</p>
+                    </div>
+                    <div class="skillContainer toLearn" id="skillToLearn">
                         <div class="imgBorder"><img src="images/javascript.jpg" alt="JavaScript logo"></div>
                         <h3>JavaScript</h3>
                         <p>The logic of JavaScript seems to be difficult but everyday by practicind code I feel more
@@ -71,7 +100,71 @@
                 </article>
             </section>
 
+            <!-- ============================LATEST PROJECTS============================== -->
+            <section class="latestProject">
+                <h1>Latest <span>P</span>roject</h1>
+                <article class="project">
+                    <div class="projectImages"> <img src="images/portfolio/site3.jpeg" alt="portfolio"> <img
+                            src="images/portfolio/site2.jpeg" alt="portfolio">
+                        <img src="images/portfolio/site1.jpeg" alt="portfolio">
 
+
+                    </div>
+                    <div class="description">
+                        <h2>Maciej Glowacki - Portfolio</h2>
+                        <p>My personal portfolio is my most recent project I have finished. I'm super excited about this
+                            one. Every single step of making it helped to approve all of my skills and learn new things.
+                        </p>
+                        <a class="button" href="#">Website</a>
+                        <a class="button" href="#githublink">Check Code</a>
+
+                    </div>
+                </article>
+
+            </section>
+            <section class="poke">
+                <p>It's not only about coding, it's about having joy.</p>
+                <a class="button" href="#contact">Contact</a>
+                <img src="images/shape5.jpg" alt="building">
+            </section>
+
+            <section class="profile">
+                <h1>My <span>P</span>rofile</h1>
+                <img src='images/profilePicture.jpg' alt="My picture - Maciej Glowacki">
+                <h3>Maciej Glowacki</h3>
+                <h4>Junior Frontend Developer</h4>
+                <p>My name is Maciej Glowacki, so it's hard to pronounce, so call me Mats. My education comes from
+                    online classes and code practice at home. I am that type of person who wants to finish what he has
+                    started. My main goal is to do what I enjoy in life and this is programming :) I've found a great
+                    fun in developing skills and knowledge.</p>
+                <h2>I love when everything is on right place and it looks smooth</h2>
+                <a class="button" href="#portofolio">My Portfolio</a>
+            </section>
+            <section class="abilities">
+                <article>
+                    <div class="skillContainer learned visible" id="learnedSkill">
+                        <img src="images/svg/calendar.svg" alt="code brackets">
+                        <h3>Consistancy</h3>
+                        <p>I believe we can master everything, but it also require a time. The key is to practice
+                            everyday. That why I put all of my free time to code.</p>
+                    </div>
+                    <div class="skillContainer learned visible" id="learnedSkill">
+                        <img src="images/svg/book.svg" alt="CSS logo">
+                        <h3>Up to date</h3>
+                        <p>To become good in things we do, we have to follow news in our industry. Instead of watching
+                            funny animals on YouTube I always looking for more interesting news and technologies from
+                            web development </p>
+                    </div>
+                    <div class="skillContainer learned visible" id="learnedSkill">
+                        <img src="images/svg/code.svg" alt="JavaScript logo">
+                        <h3>Clean Code</h3>
+                        <p>Coding is fun but it can become a tough thing. To make it easier I master how make my code
+                            DRY, Semantic, modern, Up to date, reusable and responsive.</p>
+                    </div>
+                    <div class="skillContainer learned visible" id="learnedSkill">
+
+
+            </section>
         </main>
 
 

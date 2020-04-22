@@ -12,6 +12,7 @@ p {
     margin: 8px 0;
     line-height: 1.45em;
     font-size: .9rem;
+    color: $secondary-color;
 }
 
 
@@ -29,7 +30,7 @@ li {
 }
 
 h1 {
-    margin: 5px 0;
+    margin: 20px 0;
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -41,5 +42,9 @@ h2 {
 
 h3 {
     margin: 15px 0 0;
+    color: $primary-color;
+}
+
+span {
     color: $primary-color;
 }

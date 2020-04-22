@@ -12,9 +12,11 @@
 
 
 // Flex base
-@mixin flex($disp: flex, $dir: null) {
+@mixin flex($disp: flex, $dir: null, $justify: null, $align: center) {
     display: $disp;
     flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
     @content;
 }
 
