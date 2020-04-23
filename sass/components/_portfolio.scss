@@ -1,0 +1,88 @@
+// PROJECTS ----------------------------------------------------------------------------------
+// PROJECTS ----------------------------------------------------------------------------------
+// PROJECTS ----------------------------------------------------------------------------------
+
+
+.portfolio {
+    ul {
+        @include flex;
+        color: $secondary-color;
+        margin: 20px 0;
+        padding: 0;
+
+        li {
+            padding: 5px 10px;
+            transition: .3s;
+        }
+
+        li:nth-child(1) {
+            border: 1px solid $secondary-color;
+            border-right: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        li:nth-child(2) {
+            border-top: 1px solid $secondary-color;
+            border-bottom: 1px solid $secondary-color;
+        }
+
+        li:nth-child(3) {
+            border: 1px solid $secondary-color;
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+        }
+
+        li.checked {
+            color: white;
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+
+    article {
+        width: 90%;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr;
+        // grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+        justify-content: center;
+        margin: 0 0 30px 0;
+    }
+
+    .project {
+        display: none;
+        border: 2px solid $primary-color;
+        border-radius: 7px;
+        padding: 15px;
+        margin: 10px;
+
+        img {
+            width: 100%;
+            border-radius: 7px;
+        }
+
+        &.visible {
+            opacity: 1;
+            display: flex;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        width: 90%;
+    }
+}
+
+
+
+// ASIDE SCHOOLS
+
+
+.schools {
+    @include flex($dir: row, $justify: space-around);
+    padding: 40px 0 10px;
+
+    img {
+        max-height: 60px;
+    }
+}

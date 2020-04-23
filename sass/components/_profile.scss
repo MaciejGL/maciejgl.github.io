@@ -1,0 +1,37 @@
+// Profile --------------------------------------------------------------------------------
+// Profile --------------------------------------------------------------------------------
+// Profile --------------------------------------------------------------------------------
+
+.profile {
+    @include flex($dir: column);
+
+    h1 {
+        margin: 40px 0;
+    }
+
+    img {
+        display: block;
+        border-radius: 50%;
+        width: 130px;
+        box-shadow: 0 0 5px 5px white, 0 0 0 8px $primary-color, 0 0 4px 10px $primary-color;
+    }
+
+    h3 {
+        margin: 40px 0 0;
+    }
+
+    h4 {
+        color: $secondary-color;
+        margin: 5px 0 25px;
+    }
+
+    p {
+        width: 90%;
+        text-align: center;
+    }
+
+    h2 {
+        width: 90%;
+        text-align: center;
+    }
+}

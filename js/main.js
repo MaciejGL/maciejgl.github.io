@@ -14,57 +14,55 @@ burger.addEventListener('click', function () {
 
 // Skills 
 const skillsSection = document.getElementById('skills');
-const learnedBtn = document.getElementById('learned');
-const toLearnBtn = document.getElementById('toLearn');
-const learnedSkill = document.querySelectorAll('#learnedSkill');
-const skillToLearn = document.querySelectorAll('#skillToLearn');
-
-// skillsSection.addEventListener('click', (e) => {
-//     console.log(e.target.id)
-//     if (e.target.id == 'learned') {
-//         learnedBtn.classList.add('checked');
-//         toLearnBtn.classList.remove('checked');
-//         learnedSkill.forEach(el => el.style.animation = 'appear 1s 1s linear both');
-//         skillToLearn.forEach(el => el.style.animation = 'disappear 1s linear both');
-//     } else if (e.target.id == 'toLearn') {
-//         learnedBtn.classList.remove('checked');
-//         toLearnBtn.classList.add('checked');
-//         learnedSkill.forEach(el => el.style.animation = 'disappear 1s linear both');
-//         skillToLearn.forEach(el => el.style.animation = 'appear 1s 1s linear both');
-//     }
-// })
+const liSkills = document.querySelectorAll('.skills li');
+const skills = document.querySelectorAll('.skillContainer');
 
 
+const displayCorrectList = (e, buttons, list, cssSelector = null) => {
+    buttons.forEach(btn => {
+        const btnId = e.target.id
+        if (btnId == btn.id) {
+            btn.classList.add('checked')
+            list.forEach(skill => {
+                if (btnId == skill.dataset.all || btnId == skill.dataset.status) {
+                    skill.classList.add(cssSelector)
+                } else {
+                    skill.classList.remove(cssSelector)
+                }
+            })
+        } else {
+            btn.classList.remove('checked')
+        }
+    })
+
+
+}
 skillsSection.addEventListener('click', (e) => {
-    console.log(e.target.id)
-    if (e.target.id == 'learned') {
-        learnedBtn.classList.add('checked');
-        toLearnBtn.classList.remove('checked');
-
-        skillToLearn.forEach(el => {
-            el.classList.remove('visible')
-        });
-        learnedSkill.forEach(el => {
-            el.classList.add('visible')
-        });
-
-    } else if (e.target.id == 'toLearn') {
-        learnedBtn.classList.remove('checked');
-        toLearnBtn.classList.add('checked');
-
-        learnedSkill.forEach(el => {
-            el.classList.remove('visible')
-        });
-        skillToLearn.forEach(el => {
-            el.classList.add('visible')
-        });
-
+    if (e.target.tagName == "LI") {
+        displayCorrectList(e, liSkills, skills, 'visible')
     }
 })
 
-// PROJECTS
+// Lates Project
+
 const projectContainer = document.querySelector('.projectImages');
 
 projectContainer.addEventListener('click', () => {
     projectContainer.classList.toggle('clicked')
+})
+
+// Portfolio Section
+const portfolioSection = document.querySelector('.portfolio');
+const btnPortfolio = document.querySelectorAll('.portfolio li');
+const projectsList = document.querySelectorAll('.project');
+
+portfolioSection.addEventListener('click', (e) => {
+    if (e.target.tagName == "LI") {
+        if (e.target.id == 'all') {
+            projectsList.forEach(project => project.setAttribute('data-all', 'all'))
+        } else if (e.target.id != 'all') {
+            projectsList.forEach(project => project.removeAttribute("all"))
+        }
+        displayCorrectList(e, btnPortfolio, projectsList, 'visible')
+    }
 })

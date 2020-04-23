@@ -1,0 +1,83 @@
+/* ============================================= */
+/*              Forms                            */
+/* ============================================= */
+
+.contact {
+    @include flex($dir:column);
+    background-color: $dark-color;
+
+    h1 {
+        color: white;
+        margin: 40px 0 30px;
+    }
+}
+
+.contactInf {
+    @include flex($dir: column);
+
+    p {
+        color: white;
+        text-align: center;
+        margin: 3px 0;
+    }
+
+    p:nth-child(3) {
+        margin-top: 40px;
+    }
+
+    .socials {
+        @include flex($dir: row, $justify: center);
+
+        a {
+            padding: 5px;
+
+            svg {
+                height: 2rem;
+                width: 2rem;
+                fill: white
+            }
+        }
+    }
+
+    h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.form {
+    @include flex($dir: column);
+    width: 100%;
+
+    form {
+        @include flex($dir: column);
+        width: 90%
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 0.6rem;
+        font-size: .8rem;
+        color: $secondary-color;
+        border: none;
+        border-radius: 5px;
+        transition: .2s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 2px 2px $primary-color;
+        }
+    }
+
+    textarea {
+        min-height: 100px;
+    }
+
+    button {
+        color: white;
+        align-self: flex-end;
+        margin: 15px 0 20px 0;
+    }
+}

@@ -12,6 +12,7 @@ nav {
     background-color: rgb(255, 255, 255);
     width: 100%;
     transition: .5s;
+    z-index: 100;
 
     &.show {
         top: 0;

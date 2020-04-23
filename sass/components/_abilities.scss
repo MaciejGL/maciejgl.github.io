@@ -1,0 +1,24 @@
+// Abilities ----------------------------------------------------------------------------------
+// Abilities ----------------------------------------------------------------------------------
+// Abilities ----------------------------------------------------------------------------------
+
+
+.abilities {
+    @include flex($dir: column);
+    margin: 50px 0;
+    padding: 50px 0 0;
+    background-color: $dark-color;
+    // box-shadow: 0 -1px 4px 2px $secondary-color;
+
+    .skillContainer {
+        margin: 40px 0;
+
+        &:nth-child(1) img {
+            transform: translateX(5px);
+        }
+    }
+
+    p {
+        color: #eee
+    }
+}

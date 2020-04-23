@@ -12,8 +12,70 @@ body {
     background-color: white;
 }
 
+
+
+
+
+// HEADER
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 50px);
+    background-color: $bgc-color;
+
+
+    img {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: auto;
+    }
+
+    .description {
+        width: 100%;
+
+        h1,
+        h2 {
+            margin: 8px 0;
+            text-align: center;
+        }
+    }
+}
+
+// MAIN
+
+
+
 .main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+}
+
+// Footer
+footer {
+    @include flex($dir: row, $justify: space-around);
+    height: 50px;
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .socials {
+        @include flex($dir: row);
+
+        svg {
+            box-sizing: content-box;
+            padding: 5px 10px;
+            fill: #aaa
+        }
+    }
 }

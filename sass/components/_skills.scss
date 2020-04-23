@@ -1,0 +1,122 @@
+// -----------------------------------------------------------------
+// ------------------- Skills --------------------------------------
+// -----------------------------------------------------------------
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    box-shadow: 0 -1px 4px 2px $secondary-color;
+}
+
+.skills {
+
+
+    a {
+        position: relative;
+        padding: 5px 0;
+        font-size: .7rem;
+        margin-bottom: 20px;
+
+        span {
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: checkMore 2s infinite linear both;
+        }
+    }
+
+    ul {
+        display: flex;
+        color: $secondary-color;
+        margin: 20px 0;
+        padding: 0;
+
+        li:nth-child(1) {
+            padding: 5px;
+            border: 1px solid $secondary-color;
+            border-right: none;
+            border-radius: 5px 0 0 5px;
+            transition: .2s;
+        }
+
+        li:nth-child(2) {
+            padding: 5px;
+            border: 1px solid $secondary-color;
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+        }
+
+        li.checked {
+            color: white;
+            background-color: $primary-color;
+            border: 1px solid $primary-color;
+        }
+    }
+
+}
+
+@keyframes checkMore {
+    0% {}
+
+    15% {
+        text-shadow: 0 5px;
+    }
+
+    30% {
+        text-shadow: 0 5px, 0 10px;
+    }
+
+    45% {
+        text-shadow: 0 5px, 0 10px;
+    }
+
+    60% {
+        text-shadow: 0 5px;
+    }
+
+    75% {
+        text-shadow: none;
+    }
+
+
+}
+
+
+
+.skillContainer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+
+    .imgBorder {
+        margin-top: 20px;
+        border: 3px solid $primary-color;
+        padding: 30px;
+        border-radius: 50%;
+    }
+
+    p {
+        width: 80%;
+    }
+
+    &.visible {
+        opacity: 1;
+        display: flex;
+    }
+
+    .images {
+        margin: 20px 0;
+
+        img {
+            margin: 10px;
+        }
+    }
+}
