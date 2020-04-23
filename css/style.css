@@ -1066,7 +1066,7 @@ section {
 
 .project p {
   text-align: center;
-  width: 90%;
+  width: 80%;
 }
 
 .project a:hover {
@@ -1156,7 +1156,7 @@ section {
 }
 
 .profile p {
-  width: 90%;
+  width: 80%;
   text-align: center;
 }
 
@@ -1236,24 +1236,23 @@ section {
 }
 
 .portfolio article {
-  width: 90%;
   max-width: 1200px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-columns: (minmax(auto, 300px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(auto, 300px));
+  grid-gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 30px 0;
 }
 
 .portfolio .project {
   display: none;
-  border: 2px solid #29C1C3;
   border-radius: 7px;
-  padding: 15px;
+  padding: 1px;
   margin: 10px;
+  max-width: 300px;
 }
 
 .portfolio .project img {
@@ -1292,3 +1291,4 @@ section {
 .schools img {
   max-height: 60px;
 }
+/*# sourceMappingURL=style.css.map */
