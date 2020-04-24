@@ -14,6 +14,7 @@
         li {
             padding: 5px 10px;
             transition: .3s;
+            cursor: pointer;
         }
 
         li:nth-child(1) {
@@ -50,10 +51,12 @@
     }
 
     .project {
+
         display: none;
+        flex-direction: column;
+        align-items: center;
         border-radius: 3px;
         box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-        // max-width: 300px;
 
         img {
             width: 100%;
@@ -72,6 +75,7 @@
 
     p {
         margin: 10px 0 30px;
+        padding: 0 5px;
         text-align: center;
     }
 
@@ -101,44 +105,11 @@
 
 
         article {
-            width: 90%;
-            max-width: 1200px;
-            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(auto, 250px));
-            grid-gap: 30px;
-            justify-content: center;
-        }
-
-        .project {
-            display: none;
-            border-radius: 3px;
-            box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-            // max-width: 300px;
-
-            img {
-                width: 100%;
-                border-radius: 3px 3px 0 0;
-            }
-
-            &.visible {
-                display: flex;
-            }
-        }
-
-        h3 {
-            margin: 30px 0 0;
-            text-align: center;
         }
 
         p {
             font-size: 0.9rem;
-            margin: 10px 0 30px;
-            text-align: center;
-        }
-
-        h2 {
-            text-align: center;
-            margin: 70px 0 0;
         }
     }
 }

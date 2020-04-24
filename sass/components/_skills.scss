@@ -13,7 +13,7 @@ section {
 }
 
 .skills {
-
+    padding: 0 0 30px 0;
 
     a {
         position: relative;
@@ -36,19 +36,22 @@ section {
         margin: 20px 0;
         padding: 0;
 
-        li:nth-child(1) {
+        li {
             padding: 5px;
             border: 1px solid $secondary-color;
-            border-right: none;
-            border-radius: 5px 0 0 5px;
+            cursor: pointer;
             transition: .2s;
         }
 
+        li:nth-child(1) {
+            border-radius: 5px 0 0 5px;
+            border-right: none;
+
+        }
+
         li:nth-child(2) {
-            padding: 5px;
-            border: 1px solid $secondary-color;
-            border-left: none;
             border-radius: 0 5px 5px 0;
+            border-left: none;
         }
 
         li.checked {
@@ -126,7 +129,8 @@ section {
         article {
             @include flex($justify: center, $align: flex-start);
             flex-wrap: wrap;
-            max-width: 90%;
+            width: 90%;
+            max-width: 1100px;
         }
 
         .skillContainer {
