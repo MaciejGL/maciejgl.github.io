@@ -1159,12 +1159,6 @@ section {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-<<<<<<< Updated upstream
-  opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
-=======
->>>>>>> Stashed changes
 }
 
 .skillContainer .imgBorder {
@@ -1175,12 +1169,6 @@ section {
 }
 
 .skillContainer.visible {
-<<<<<<< Updated upstream
-  opacity: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-=======
   -webkit-animation: visible .3s .3s linear both;
           animation: visible .3s .3s linear both;
 }
@@ -1192,7 +1180,6 @@ section {
 
 .skillContainer p {
   width: 80%;
->>>>>>> Stashed changes
 }
 
 .skillContainer .images {

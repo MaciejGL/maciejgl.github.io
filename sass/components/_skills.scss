@@ -96,11 +96,6 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-<<<<<<< Updated upstream
-    opacity: 0;
-    transition: 1s;
-=======
->>>>>>> Stashed changes
 
     .imgBorder {
         margin-top: 20px;
@@ -110,10 +105,6 @@ section {
     }
 
     &.visible {
-<<<<<<< Updated upstream
-        opacity: 1;
-        display: flex;
-=======
         animation: visible .3s .3s linear both;
     }
 
@@ -123,7 +114,6 @@ section {
 
     p {
         width: 80%;
->>>>>>> Stashed changes
     }
 
 
