@@ -25,9 +25,23 @@ const displayCorrectList = (e, buttons, list, cssSelector = null) => {
             btn.classList.add('checked')
             list.forEach(skill => {
                 if (btnId == skill.dataset.all || btnId == skill.dataset.status) {
+<<<<<<< Updated upstream
                     skill.classList.add(cssSelector)
                 } else {
                     skill.classList.remove(cssSelector)
+=======
+                    skill.classList.add(cssSelector);
+                    skill.classList.remove(hide);
+                    setTimeout(() => {
+                        skill.style.display = 'flex'
+                    }, 300)
+                } else {
+                    skill.classList.remove(cssSelector)
+                    skill.classList.add(hide)
+                    setTimeout(() => {
+                        skill.style.display = 'none'
+                    }, 300)
+>>>>>>> Stashed changes
                 }
             })
         } else {
@@ -39,10 +53,36 @@ const displayCorrectList = (e, buttons, list, cssSelector = null) => {
 }
 skillsSection.addEventListener('click', (e) => {
     if (e.target.tagName == "LI") {
+<<<<<<< Updated upstream
         displayCorrectList(e, liSkills, skills, 'visible')
     }
 })
 
+=======
+        displayCorrectList(e, liSkills, skills, 'visible', 'unvisible');
+    }
+})
+
+const addDisplay = () => {
+    skills.forEach(skill => {
+        if (skill.classList.contains('visible')) {
+            skill.style.display = 'flex'
+        } else {
+            skill.style.display = 'none'
+        }
+    })
+    projectsList.forEach(skill => {
+        if (skill.classList.contains('visible')) {
+            skill.style.display = 'flex'
+        } else {
+            skill.style.display = 'none'
+        }
+    })
+}
+
+
+
+>>>>>>> Stashed changes
 // Lates Project
 
 const projectContainer = document.querySelector('.projectImages');
@@ -63,6 +103,10 @@ portfolioSection.addEventListener('click', (e) => {
         } else if (e.target.id != 'all') {
             projectsList.forEach(project => project.removeAttribute("all"))
         }
-        displayCorrectList(e, btnPortfolio, projectsList, 'visible')
+        displayCorrectList(e, btnPortfolio, projectsList, 'visible', 'unvisible')
     }
 })
+
+
+
+addDisplay()

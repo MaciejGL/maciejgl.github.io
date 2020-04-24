@@ -96,8 +96,11 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+<<<<<<< Updated upstream
     opacity: 0;
     transition: 1s;
+=======
+>>>>>>> Stashed changes
 
     .imgBorder {
         margin-top: 20px;
@@ -106,14 +109,23 @@ section {
         border-radius: 50%;
     }
 
-    p {
-        width: 80%;
-    }
-
     &.visible {
+<<<<<<< Updated upstream
         opacity: 1;
         display: flex;
+=======
+        animation: visible .3s .3s linear both;
     }
+
+    &.unvisible {
+        animation: unvisible .3s linear both;
+    }
+
+    p {
+        width: 80%;
+>>>>>>> Stashed changes
+    }
+
 
     .images {
         margin: 20px 0;

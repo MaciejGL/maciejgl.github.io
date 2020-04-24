@@ -40,6 +40,48 @@
   }
 }
 
+@-webkit-keyframes unvisible {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes unvisible {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1117,9 +1159,12 @@ section {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+<<<<<<< Updated upstream
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
+=======
+>>>>>>> Stashed changes
 }
 
 .skillContainer .imgBorder {
@@ -1129,15 +1174,25 @@ section {
   border-radius: 50%;
 }
 
-.skillContainer p {
-  width: 80%;
-}
-
 .skillContainer.visible {
+<<<<<<< Updated upstream
   opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+=======
+  -webkit-animation: visible .3s .3s linear both;
+          animation: visible .3s .3s linear both;
+}
+
+.skillContainer.unvisible {
+  -webkit-animation: unvisible .3s linear both;
+          animation: unvisible .3s linear both;
+}
+
+.skillContainer p {
+  width: 80%;
+>>>>>>> Stashed changes
 }
 
 .skillContainer .images {
@@ -1613,14 +1668,15 @@ section {
 .portfolio article {
   width: 90%;
   max-width: 1200px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(auto, 300px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
-  grid-gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  grid-gap: 30px;
 }
 
 .portfolio .project {
@@ -1635,6 +1691,8 @@ section {
   border-radius: 3px;
   -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
           box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  max-width: 250px;
+  margin: 15px;
 }
 
 .portfolio .project img {
@@ -1643,9 +1701,13 @@ section {
 }
 
 .portfolio .project.visible {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-animation: visible .3s .3s linear both;
+          animation: visible .3s .3s linear both;
+}
+
+.portfolio .project.unvisible {
+  -webkit-animation: unvisible .5s linear both;
+          animation: unvisible .5s linear both;
 }
 
 .portfolio h3 {
@@ -1687,11 +1749,8 @@ section {
 }
 
 @media (min-width: 768px) {
-  .portfolio article {
-    -ms-grid-columns: (minmax(auto, 250px))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(auto, 250px));
-  }
   .portfolio p {
     font-size: 0.9rem;
   }
 }
+/*# sourceMappingURL=style.css.map */

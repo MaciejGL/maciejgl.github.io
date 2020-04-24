@@ -44,19 +44,20 @@
     article {
         width: 90%;
         max-width: 1200px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
-        grid-gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        grid-gap: 30px;
     }
 
     .project {
-
         display: none;
         flex-direction: column;
         align-items: center;
         border-radius: 3px;
         box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+        max-width: 250px;
+        margin: 15px;
 
         img {
             width: 100%;
@@ -64,7 +65,11 @@
         }
 
         &.visible {
-            display: flex;
+            animation: visible .3s .3s linear both;
+        }
+
+        &.unvisible {
+            animation: unvisible .5s linear both;
         }
     }
 
@@ -102,12 +107,6 @@
 
 @media (min-width: $bp-medium) {
     .portfolio {
-
-
-        article {
-            grid-template-columns: repeat(auto-fit, minmax(auto, 250px));
-        }
-
         p {
             font-size: 0.9rem;
         }
