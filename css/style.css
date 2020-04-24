@@ -1014,6 +1014,8 @@ section {
 }
 
 .skills {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   padding: 0 0 30px 0;
 }
 
@@ -1117,7 +1119,6 @@ section {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -1134,10 +1135,15 @@ section {
 }
 
 .skillContainer.visible {
-  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: show 1s 2s linear both;
+          animation: show 1s 2s linear both;
+}
+
+.skillContainer.unvisible {
+  animation: show 1s linear reverse;
 }
 
 .skillContainer .images {
@@ -1180,6 +1186,83 @@ section {
   }
   .skills .skillContainer p {
     width: 90%;
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  5% {
+    display: -webkit-box;
+    display: flex;
+    opacity: 0;
+  }
+  20% {
+    display: -webkit-box;
+    display: flex;
+    opacity: 0;
+  }
+  100% {
+    display: -webkit-box;
+    display: flex;
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  5% {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+  }
+  20% {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+  }
+  100% {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
   }
 }
 

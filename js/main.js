@@ -12,13 +12,13 @@ burger.addEventListener('click', function () {
 
 
 
-// Skills 
+// Skills
 const skillsSection = document.getElementById('skills');
 const liSkills = document.querySelectorAll('.skills li');
 const skills = document.querySelectorAll('.skillContainer');
 
 
-const displayCorrectList = (e, buttons, list, cssSelector = null) => {
+const displayCorrectList = (e, buttons, list, cssSelector = null, hide = null) => {
     buttons.forEach(btn => {
         const btnId = e.target.id
         if (btnId == btn.id) {
@@ -26,8 +26,10 @@ const displayCorrectList = (e, buttons, list, cssSelector = null) => {
             list.forEach(skill => {
                 if (btnId == skill.dataset.all || btnId == skill.dataset.status) {
                     skill.classList.add(cssSelector)
+                    skill.classList.remove(hide)
                 } else {
                     skill.classList.remove(cssSelector)
+                    skill.classList.add(hide)
                 }
             })
         } else {
@@ -39,9 +41,11 @@ const displayCorrectList = (e, buttons, list, cssSelector = null) => {
 }
 skillsSection.addEventListener('click', (e) => {
     if (e.target.tagName == "LI") {
-        displayCorrectList(e, liSkills, skills, 'visible')
+        displayCorrectList(e, liSkills, skills, 'visible', 'unvisible')
     }
 })
+
+
 
 // Lates Project
 
