@@ -56,3 +56,28 @@
         }
     }
 }
+
+
+@keyframes headerBigScreen {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0.15;
+    }
+
+    100% {
+        opacity: 0.15;
+    }
+}
+
+@keyframes headerTitleBigScreen {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

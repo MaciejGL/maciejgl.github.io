@@ -27,21 +27,51 @@ body {
     min-height: calc(100vh - 50px);
     background-color: $bgc-color;
 
-
-    img {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: auto;
-    }
-
     .description {
         width: 100%;
+        text-align: center;
 
         h1,
         h2 {
             margin: 8px 0;
-            text-align: center;
+        }
+
+        a.button {
+            display: inline-block;
+        }
+    }
+}
+
+@media (min-width: $bp-large) {
+    .header {
+        justify-content: center;
+        align-items: flex-start;
+
+        .description {
+            position: absolute;
+            top: 35%;
+            left: 15%;
+            width: auto;
+
+            h1 {
+                text-align: left;
+            }
+
+            h1:nth-child(1) {
+                font-size: 4.2rem;
+                margin-bottom: -20px;
+                margin-left: -50px;
+                animation: headerTitleBigScreen 3s both;
+            }
+
+            h1:nth-child(2) {
+                animation: headerTitleBigScreen 3s 0.5s both;
+            }
+
+            h2 {
+                text-align: right;
+                animation: headerTitleBigScreen 3s 1s both;
+            }
         }
     }
 }

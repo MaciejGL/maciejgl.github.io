@@ -120,3 +120,34 @@ section {
         }
     }
 }
+
+@media (min-width: $bp-medium) {
+    .skills {
+        article {
+            @include flex($justify: center, $align: flex-start);
+            flex-wrap: wrap;
+            max-width: 90%;
+        }
+
+        .skillContainer {
+            flex-basis: 33%;
+
+            &:nth-child(4) {
+                flex-basis: 50%;
+            }
+
+            .imgBorder {
+                margin-top: 20px;
+                border: 3px solid $primary-color;
+                padding: 30px;
+                border-radius: 50%;
+            }
+
+            p {
+                width: 90%;
+            }
+        }
+    }
+
+
+}

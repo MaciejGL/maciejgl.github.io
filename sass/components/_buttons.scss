@@ -2,27 +2,7 @@
 /*              Buttons                          */
 /* ============================================= */
 
-button {
-    display: block;
-    margin-top: 30px;
-    padding: 8px 45px;
-    font-size: 0.8rem;
-    color: $primary-color;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    background-color: transparent;
-    border: 2px solid $primary-color;
-    border-radius: 21px;
-    outline: none;
-    transition: 0.1s linear;
-
-    &:hover {
-        background-color: $primary-color;
-        color: white;
-    }
-}
-
+button,
 a.button {
     display: block;
     margin-top: 30px;
@@ -43,3 +23,5 @@ a.button {
         color: white;
     }
 }
+
+@media (min-width: $bp-medium) {}

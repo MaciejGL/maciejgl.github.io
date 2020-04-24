@@ -41,37 +41,43 @@
     }
 
     article {
-        // width: 90%;
+        width: 90%;
         max-width: 1200px;
         display: grid;
-        // grid-template-columns: 1fr;
-        grid-template-columns: repeat(auto-fill, minmax(auto, 300px));
-        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
+        grid-gap: 30px;
         justify-content: center;
     }
 
     .project {
         display: none;
-        // border: 2px solid $primary-color;
-        border-radius: 7px;
-        padding: 1px;
-        margin: 10px;
-        max-width: 300px;
+        border-radius: 3px;
+        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+        // max-width: 300px;
 
         img {
             width: 100%;
-            border-radius: 7px;
+            border-radius: 3px 3px 0 0;
         }
 
         &.visible {
-            opacity: 1;
             display: flex;
         }
     }
 
+    h3 {
+        margin: 30px 0 0;
+        text-align: center;
+    }
+
+    p {
+        margin: 10px 0 30px;
+        text-align: center;
+    }
+
     h2 {
         text-align: center;
-        width: 90%;
+        margin: 70px 0 0;
     }
 }
 
@@ -81,10 +87,58 @@
 
 
 .schools {
-    @include flex($dir: row, $justify: space-around);
+    @include flex($dir: row, $justify: center);
     padding: 40px 0 10px;
 
     img {
         max-height: 60px;
+        margin: 0 20px;
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .portfolio {
+
+
+        article {
+            width: 90%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(auto, 250px));
+            grid-gap: 30px;
+            justify-content: center;
+        }
+
+        .project {
+            display: none;
+            border-radius: 3px;
+            box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+            // max-width: 300px;
+
+            img {
+                width: 100%;
+                border-radius: 3px 3px 0 0;
+            }
+
+            &.visible {
+                display: flex;
+            }
+        }
+
+        h3 {
+            margin: 30px 0 0;
+            text-align: center;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin: 10px 0 30px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 70px 0 0;
+        }
     }
 }

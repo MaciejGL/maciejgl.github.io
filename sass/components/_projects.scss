@@ -27,7 +27,7 @@
             height: 90%;
             width: auto;
             transform: rotateY(20deg) rotateX(0deg) translateX(-60%);
-            box-shadow: 0 0 3px 0 black;
+            box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
             transition: .4s;
 
             &:nth-child(2) {
@@ -81,5 +81,117 @@
 
     a:nth-last-of-type(1) {
         margin-top: 5px;
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .project {
+        .projectImages {
+            &.clicked {
+                img {
+                    height: 90%;
+
+                    &:nth-child(1) {
+                        top: 0;
+                        left: -170px
+                    }
+
+                    &:nth-child(2) {
+                        top: 0;
+                        left: 170px
+                    }
+
+                    &:nth-child(3) {
+                        left: 0;
+                        top: 0
+                    }
+                }
+            }
+
+        }
+
+        .description {
+            p {
+                text-align: center;
+                width: 60%;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: $bp-large) {
+    .project {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        width: 80%;
+
+        .projectImages {
+            flex-basis: 50%;
+
+            // img {
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     height: 90%;
+            //     width: auto;
+            //     transform: rotateY(20deg) rotateX(0deg) translateX(-60%);
+            //     box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+            //     transition: .4s;
+            //     &:nth-child(2) {
+            //         top: -5px;
+            //         left: 25px
+            //     }
+
+            //     &:nth-child(3) {
+            //         left: 50px;
+            //         top: -10px;
+            //     }
+            // }
+
+
+            // &.clicked {
+            //     img {
+            //         height: 90%;
+
+            //         &:nth-child(1) {
+            //             top: 0;
+            //             left: -170px
+            //         }
+
+            //         &:nth-child(2) {
+            //             top: 0;
+            //             left: 170px
+            //         }
+
+            //         &:nth-child(3) {
+            //             left: 0;
+            //             top: 0
+            //         }
+            //     }
+            // }
+
+        }
+
+        .description {
+            @include flex($dir: column);
+
+            p {
+                text-align: center;
+                width: 60%;
+            }
+        }
+
+
+
+        a:hover {
+            color: white
+        }
+
+        a:nth-last-of-type(1) {
+            margin-top: 5px;
+        }
     }
 }

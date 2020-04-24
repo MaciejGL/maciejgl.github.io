@@ -4,14 +4,20 @@
 
 
 .abilities {
-    @include flex($dir: column);
-    margin: 50px 0;
-    padding: 50px 0 0;
+    @include flex($dir: column, $align: center);
+    margin: 50px 0 25px;
+    padding: 50px 0;
     background-color: $dark-color;
-    // box-shadow: 0 -1px 4px 2px $secondary-color;
 
-    .skillContainer {
-        margin: 40px 0;
+    .abilitieContainer {
+        @include flex($dir: column);
+        margin: 20px 0;
+        width: 80%;
+        text-align: center;
+
+        img {
+            height: 70px;
+        }
 
         &:nth-child(1) img {
             transform: translateX(5px);
@@ -20,5 +26,21 @@
 
     p {
         color: #eee
+    }
+}
+
+@media (min-width: $bp-medium) {
+
+    .abilities {
+        @include flex($dir: row, $align: flex-start, $justify: center);
+
+        .abilitieContainer {
+            margin: 0 5px;
+            max-width: 300px;
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
     }
 }
