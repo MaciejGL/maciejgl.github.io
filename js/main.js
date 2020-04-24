@@ -96,4 +96,4 @@ portfolioSection.addEventListener('click', (e) => {
 
 
 
-addDisplay()
+addDisplay();
