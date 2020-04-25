@@ -72,7 +72,7 @@ body {
 // Footer
 footer {
     @include flex($dir: row, $justify: space-around);
-    height: 50px;
+    height: 70px;
 
     p {
         font-size: 0.8rem;
@@ -80,6 +80,15 @@ footer {
 
     nav {
         display: none;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+            }
+        }
     }
 
     .socials {
@@ -89,6 +98,23 @@ footer {
             box-sizing: content-box;
             padding: 5px 10px;
             fill: #aaa
+        }
+    }
+}
+
+@media (min-width: $bp-large) {
+    footer {
+        nav {
+            display: block;
+
+
+            ul {
+                @include flex($justify: space-around);
+
+                a {
+                    padding: 0 10px;
+                }
+            }
         }
     }
 }

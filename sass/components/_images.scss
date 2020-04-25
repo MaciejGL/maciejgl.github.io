@@ -27,31 +27,15 @@ svg {
     }
 }
 
-@keyframes headerImage {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0.15;
-    }
-}
 
 
-
-article img {
-    width: 80px;
-}
 
 @media (min-width: $bp-large) {
     .header {
         img {
             top: 60%;
-            left: 55%;
-            transform: translate(-50%, -50%);
             height: 100%;
-            z-index: 2;
-            animation: headerBigScreen 3s both;
+            animation: headerImage 3s both;
         }
     }
 }

@@ -13,6 +13,7 @@ p {
     line-height: 1.45em;
     font-size: 1rem;
     color: $secondary-color;
+    cursor: default;
 }
 
 
@@ -33,21 +34,25 @@ h1 {
     margin: 20px 0;
     font-size: 1.8rem;
     font-weight: 600;
+    cursor: default;
 }
 
 h2 {
     font-size: 1.3rem;
     font-weight: 500;
+    cursor: default;
 }
 
 h3 {
     font-size: 1.4rem;
     margin: 15px 0 0;
     color: $primary-color;
+    cursor: default;
 }
 
 span {
     color: $primary-color;
+    cursor: default;
 }
 
 @media (min-width: $bp-medium) {

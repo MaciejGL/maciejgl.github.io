@@ -18,20 +18,24 @@ const liSkills = document.querySelectorAll('.skills li');
 const skills = document.querySelectorAll('.skillContainer');
 
 
-const displayCorrectList = (e, buttons, list, cssSelector = null, hide = null) => {
+const displayCorrectList = (e, buttons, list, show = null, hide = null) => {
     buttons.forEach(btn => {
         const btnId = e.target.id
         if (btnId == btn.id) {
+
+
+
             btn.classList.add('checked')
             list.forEach(skill => {
                 if (btnId == skill.dataset.all || btnId == skill.dataset.status) {
-                    skill.classList.add(cssSelector);
-                    skill.classList.remove(hide);
+                    skill.classList.add(hide);
                     setTimeout(() => {
+                        skill.classList.remove(hide);
+                        skill.classList.add(show);
                         skill.style.display = 'flex'
                     }, 300)
                 } else {
-                    skill.classList.remove(cssSelector)
+                    skill.classList.remove(show)
                     skill.classList.add(hide)
                     setTimeout(() => {
                         skill.style.display = 'none'
@@ -93,7 +97,6 @@ portfolioSection.addEventListener('click', (e) => {
         displayCorrectList(e, btnPortfolio, projectsList, 'visible', 'unvisible')
     }
 })
-
 
 
 addDisplay();

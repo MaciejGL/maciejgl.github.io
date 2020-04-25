@@ -13,15 +13,13 @@ a.button {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     background-color: transparent;
-    border: 2px solid $primary-color;
+    border: 1.5px solid $primary-color;
     border-radius: 21px;
     outline: none;
-    transition: 0.1s linear;
+    transition: 0.2s linear;
 
     &:hover {
         background-color: $primary-color;
         color: white;
     }
 }
-
-@media (min-width: $bp-medium) {}

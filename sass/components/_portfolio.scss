@@ -12,41 +12,32 @@
         padding: 0;
 
         li {
-            padding: 5px 10px;
-            transition: .3s;
+            padding: 10px 15px;
+            transition: .4s;
             cursor: pointer;
 
 
         }
 
-        li:nth-child(1) {
-            border: 1px solid $secondary-color;
-            border-right: none;
-            border-radius: 5px 0 0 5px;
-        }
-
         li:nth-child(2) {
-            border-top: 1px solid $secondary-color;
-            border-bottom: 1px solid $secondary-color;
+            border-left: 1px solid $secondary-color;
         }
 
         li:nth-child(3) {
-            border: 1px solid $secondary-color;
-            border-left: none;
-            border-radius: 0 5px 5px 0;
+            border-left: 1px solid $secondary-color;
         }
 
-        li.checked {
-            color: white;
-            background-color: $primary-color;
-            border-color: $primary-color;
-        }
+
 
         li:nth-child(1):hover,
         li:nth-child(2):hover,
         li:nth-child(3):hover {
             color: $primary-color;
-            border-color: $primary-color;
+        }
+
+        li.checked,
+        li.checked:hover {
+            color: $primary-color;
         }
     }
 
@@ -57,6 +48,7 @@
         flex-wrap: wrap;
         justify-content: center;
         grid-gap: 30px;
+
     }
 
     .project {
@@ -64,23 +56,37 @@
         flex-direction: column;
         align-items: center;
         border-radius: 3px;
-        box-shadow: 5px 15px 10px $dark-color;
+        box-shadow: 5px 15px 10px 0px $dark-color, 0px 0px 2px 0px $dark-color;
         max-width: 250px;
         margin: 15px;
         transition: 0.3s;
-        cursor: pointer;
+        cursor: default;
         overflow: hidden;
 
         &:hover {
-            transform: scale(1.1);
-            box-shadow: 15px 25px 10px $dark-color;
+            transform: scale(1.05);
+            box-shadow: 15px 25px 10px 0px $dark-color, 0px 0px 2px 0px $dark-color;
         }
 
         img {
             display: inline-block;
-            width: 101%;
+            width: 100%;
             border-radius: 3px 3px 0 0;
             box-shadow: 0 1px 2px $primary-color;
+        }
+
+        .buttons {
+            @include flex($justify: center);
+            width: 100%;
+            margin-top: auto;
+
+            a {
+                text-align: center;
+                flex-basis: 40%;
+                margin: 0 5px 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
         }
 
         &.visible {
@@ -98,7 +104,7 @@
     }
 
     p {
-        margin: 10px 0 30px;
+        margin: 10px 0 15px;
         padding: 0 5px;
         text-align: center;
     }

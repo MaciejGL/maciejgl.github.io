@@ -29,6 +29,7 @@
             transform: rotateY(20deg) rotateX(0deg) translate(-60%, -50%);
             box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
             transition: .4s;
+            cursor: pointer;
 
             &:nth-child(2) {
                 top: calc(50% - 5px);

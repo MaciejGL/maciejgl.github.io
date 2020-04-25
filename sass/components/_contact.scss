@@ -9,6 +9,7 @@
     h1 {
         color: white;
         margin: 40px 0 30px;
+        text-align: center;
     }
 }
 
@@ -27,6 +28,7 @@
 
     .socials {
         @include flex($dir: row, $justify: center);
+        margin: 20px 0 15px;
 
         a {
             padding: 5px;
@@ -79,5 +81,83 @@
         color: white;
         align-self: flex-end;
         margin: 15px 0 20px 0;
+    }
+}
+
+@media (min-width: $bp-large) {
+    .contact {
+        @include flex($dir:row, $justify: center, $align: flex-start);
+        flex-wrap: wrap;
+        padding-bottom: 70px;
+
+        h1 {
+            margin: 60px 0;
+            width: 100%;
+        }
+    }
+
+    .contactInf {
+        @include flex($dir: column, $align: flex-start);
+        flex-basis: 45%;
+        max-width: 500px;
+
+        p {
+            text-align: left;
+        }
+
+        .socials {
+            @include flex($dir: row, $justify: center);
+        }
+
+        h3 {
+            padding-bottom: 5px;
+            text-align: left;
+            border-bottom: 2px solid;
+        }
+    }
+
+    .form {
+        flex-basis: 45%;
+        max-width: 500px;
+
+        form {
+            width: 100%
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            margin: 0 0 2rem 0;
+            color: white;
+            border-bottom: 2px solid white;
+            border-radius: 1px;
+            background-color: transparent;
+
+            &::placeholder {
+                color: rgb(219, 219, 219);
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                border-bottom-color: $primary-color;
+            }
+        }
+
+        textarea {
+            min-height: 140px;
+        }
+
+        button {
+            color: white;
+            align-self: flex-end;
+            margin: 0;
+            border: none;
+            text-transform: capitalize;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
     }
 }
