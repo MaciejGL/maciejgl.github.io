@@ -696,35 +696,17 @@ body {
 }
 
 @media (min-width: 900px) {
-  .header {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  .header h1:nth-child(1) {
+    -webkit-animation: headerTitleBigScreen 1.5s both;
+            animation: headerTitleBigScreen 1.5s both;
   }
-  .header .description {
-    position: absolute;
-    top: 35%;
-    left: 15%;
-    width: auto;
+  .header h1:nth-child(2) {
+    -webkit-animation: headerTitleBigScreen 1.5s 0.5s both;
+            animation: headerTitleBigScreen 1.5s 0.5s both;
   }
-  .header .description h1 {
-    text-align: left;
-  }
-  .header .description h1:nth-child(1) {
-    font-size: 4.2rem;
-    margin-bottom: -20px;
-    margin-left: -50px;
-    -webkit-animation: headerTitleBigScreen 3s both;
-            animation: headerTitleBigScreen 3s both;
-  }
-  .header .description h1:nth-child(2) {
-    -webkit-animation: headerTitleBigScreen 3s 0.5s both;
-            animation: headerTitleBigScreen 3s 0.5s both;
-  }
-  .header .description h2 {
-    text-align: right;
-    -webkit-animation: headerTitleBigScreen 3s 1s both;
-            animation: headerTitleBigScreen 3s 1s both;
+  .header h2 {
+    -webkit-animation: headerTitleBigScreen 1.5s 1s both;
+            animation: headerTitleBigScreen 1.5s 1s both;
   }
 }
 
@@ -1652,6 +1634,13 @@ section {
   border-color: #29C1C3;
 }
 
+.portfolio ul li:nth-child(1):hover,
+.portfolio ul li:nth-child(2):hover,
+.portfolio ul li:nth-child(3):hover {
+  color: #29C1C3;
+  border-color: #29C1C3;
+}
+
 .portfolio article {
   width: 90%;
   max-width: 1200px;
@@ -1676,15 +1665,29 @@ section {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 3px;
-  -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 5px 15px 10px #142435;
+          box-shadow: 5px 15px 10px #142435;
   max-width: 250px;
   margin: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.portfolio .project:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 15px 25px 10px #142435;
+          box-shadow: 15px 25px 10px #142435;
 }
 
 .portfolio .project img {
-  width: 100%;
+  display: inline-block;
+  width: 101%;
   border-radius: 3px 3px 0 0;
+  -webkit-box-shadow: 0 1px 2px #29C1C3;
+          box-shadow: 0 1px 2px #29C1C3;
 }
 
 .portfolio .project.visible {
@@ -1740,4 +1743,3 @@ section {
     font-size: 0.9rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
