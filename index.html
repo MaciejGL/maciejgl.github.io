@@ -94,26 +94,26 @@
                     <li id="toLearn">I'm learning</li>
                 </ul>
                 <article>
-                    <div class="skillContainer visible" data-status="learned">
+                    <div class="skillContainer" id="skill1" data-status="learned">
                         <div class="imgBorder"><img src="images/html.png" alt="HTML logo"></div>
                         <h3>HTML</h3>
                         <p>I know HTML5 and how valuable are semantic markups. Deep understanding of correct using
                             HTML
                             helps me to construct readable sites. </p>
                     </div>
-                    <div class="skillContainer visible" data-status="learned">
+                    <div class="skillContainer" id="skill2" data-status="learned">
                         <div class="imgBorder"><img src="images/css.png" alt="CSS logo"></div>
                         <h3>CSS</h3>
                         <p>In my projects I learned how to create responsive good looking websites. I feel very
                             confident with Flex and Grid. Also can use Sass/Scss.</p>
                     </div>
-                    <div class="skillContainer visible" data-status="learned">
+                    <div class="skillContainer" id="skill3" data-status="learned">
                         <div class="imgBorder"><img src="images/javascript.png" alt="JavaScript logo"></div>
                         <h3>JavaScript</h3>
                         <p>The logic of JavaScript seems to be difficult but everyday by practicind code I feel more
                             confident. I understand ES6, OOP, DOM manipulations, Api etc.</p>
                     </div>
-                    <div class="skillContainer visible" data-status="learned">
+                    <div class="skillContainer" id="skill4" data-status="learned">
 
                         <h3>and few more...</h3>
                         <div class="images">
@@ -148,13 +148,13 @@
             <section class="latestProject">
                 <h1>Latest <span>P</span>roject</h1>
                 <article class="latestProjectWrapper">
-                    <div class="projectImages"> <img src="images/portfolio/site3.jpeg" alt="portfolio"> <img
-                            src="images/portfolio/site2.jpeg" alt="portfolio">
+                    <div class="projectImages" id="project1"> <img src="images/portfolio/site3.jpeg" alt="portfolio">
+                        <img src="images/portfolio/site2.jpeg" alt="portfolio">
                         <img src="images/portfolio/site1.jpeg" alt="portfolio">
 
 
                     </div>
-                    <div class="description">
+                    <div class="description" id="project2">
                         <h2>Maciej Glowacki - Portfolio</h2>
                         <p>My personal portfolio is my most recent project I have finished. I'm super excited about this
                             one. Every single step of making it helped to improve all of my skills and learn new things.
@@ -181,13 +181,13 @@
             <!-- ======================================== PROFILE ====================================== -->
             <!-- ======================================== PROFILE ====================================== -->
 
-            <section class="profile" id="profile">
+            <section class="profile">
                 <h1>My <span>P</span>rofile</h1>
-                <img src='images/profilePicture.jpg' alt="My picture - Maciej Glowacki">
+                <img src='images/profilePicture.jpg' id="profile1" alt="My picture - Maciej Glowacki">
                 <h3>Maciej Glowacki</h3>
                 <h4>Junior Frontend Developer</h4>
-                <p>My name is Maciej Glowacki, so it's hard to pronounce, so call me Mats. My education comes from
-                    online classes and code practice at home. I am that type of person who wants to finish what he has
+                <p>Hi, I am Maciej Glowacki a future Frontend Developer. I am that type of person who wants to finish
+                    what he has
                     started. My main goal is to do what I enjoy in life and this is programming :) I've found a great
                     fun in developing skills and knowledge. To graduate my skills and knowledge I want to start work as
                     a developer and do code on daily basis.</p>
@@ -200,20 +200,20 @@
             <!-- ========================================= Abilities ================================= -->
 
             <section class="abilities">
-                <div class="abilitieContainer">
+                <div class="abilitieContainer" id="abilitie1">
                     <img src="images/svg/calendar.svg" alt="code brackets">
                     <h3>Consistancy</h3>
                     <p>I believe we can master everything, but it also require a time. The key is to practice
                         everyday. That why I put all of my free time to code.</p>
                 </div>
-                <div class="abilitieContainer">
+                <div class="abilitieContainer" id="abilitie2">
                     <img src="images/svg/book.svg" alt="CSS logo">
                     <h3>Up to date</h3>
                     <p>To become good in things we do, we have to follow news in our industry. Instead of watching
                         funny animals on YouTube I always looking for more interesting news and technologies from
                         web development.</p>
                 </div>
-                <div class="abilitieContainer">
+                <div class="abilitieContainer" id="abilitie3">
                     <img src="images/svg/code.svg" alt="JavaScript logo">
                     <h3>Clean Code</h3>
                     <p>Coding is fun but it can become a tough thing when it's complex. To make it easier I master how
@@ -227,7 +227,7 @@
             <!-- ========================================= PORTFOLIO ================================= -->
 
             <section class="portfolio" id="portfolio">
-                <h1>My <span>P</span>ortfolio</h1>
+                <h1 class="animated jackInTheBox">My <span>P</span>ortfolio</h1>
                 <ul>
                     <li class="checked" id="all">All Projects</li>
                     <li id="commercial">Commercial</li>
@@ -235,7 +235,7 @@
                 </ul>
 
                 <article class="projects">
-                    <div class="project visible" data-all="all" data-status="commercial">
+                    <div class="project" id="projectPort1" data-all="all" data-status="commercial">
                         <img src="images/portfolio/mgportfolio.jpeg" alt="Maciej Glowacki - Portfolio">
                         <h3>My personal portfolio</h3>
                         <p>My own project from scratch. After 6 months of learning I decided to create my own site to
@@ -245,7 +245,7 @@
                         </div>
 
                     </div>
-                    <div class="project visible" data-all="all" data-status="course">
+                    <div class="project" id="projectPort2" data-all="all" data-status="course">
                         <img src="images/portfolio/employees.jpeg" alt="Employees Directory with search method - API">
                         <h3>Employees Directory - API</h3>
                         <p>Simple app using API to get random Employees list plus JavaScript to filter in all provided
@@ -254,7 +254,7 @@
                             <a href="https://maciejgl.github.io/Project-08-API-Employee-Directory" class="button" target="_blank">Live</a><a href="https://github.com/MaciejGL/Project-08-API-Employee-Directory" class="button" target="_blank">Code</a>
                         </div>
                     </div>
-                    <div class="project visible" data-all="all" data-status="course">
+                    <div class="project" id="projectPort3" data-all="all" data-status="course">
                         <img src="images/portfolio/dashboard.jpeg" alt="Dashboard App with charts plugins">
                         <h3>WebApp Dashboard</h3>
                         <p>Responsive Dashboard - I used for it charts plugins and localStorage to set and get settings.
@@ -263,7 +263,7 @@
                             <a href="https://maciejgl.github.io/Project-07-WebApp-Dashboard" class="button" target="_blank">Live</a><a href="https://github.com/MaciejGL/Project-07-WebApp-Dashboard" class="button" target="_blank">Code</a>
                         </div>
                     </div>
-                    <div class="project visible" data-all="all" data-status="course">
+                    <div class="project" id="projectPort4" data-all="all" data-status="course">
                         <img src="images/portfolio/wheelofsucces.jpeg" alt="Game Wheel of success">
                         <h3>Game - Wheel of success</h3>
                         <p>Simple game using OOP and modules and DOM manipulation. This project was a great challange,
@@ -272,7 +272,7 @@
                             <a href="https://maciejgl.github.io/Project-06-Wheel-of-Success" class="button" target="_blank">Live</a><a href="https://github.com/MaciejGL/Project-06-Wheel-of-Success" class="button" target="_blank">Code</a>
                         </div>
                     </div>
-                    <div class="project visible" data-all="all" data-status="course">
+                    <div class="project" id="projectPort5" data-all="all" data-status="course">
                         <img src="images/portfolio/portfolio01.jpeg" alt="First attend to website project">
                         <h3>TreeHouse project 1</h3>
                         <p>TreeHouse first project. Simply HTML and CSS. It was a very first project to intruduce how to
@@ -281,7 +281,7 @@
                             <a href="https://maciejgl.github.io/Project-01-Portfolio" class="button" target="_blank">Live</a><a href="https://github.com/MaciejGL/Project-01-Portfolio" class="button" target="_blank">Code</a>
                         </div>
                     </div>
-                    <div class="project visible" data-all="all" data-status="courses">
+                    <div class="project" id="projectPort6" data-all="all" data-status="course">
                         <img src="images/portfolio/responsivegallery1.jpeg" alt="Responsive Gallery with lightbox">
                         <h3>Responsive Gallery</h3>
                         <p>Basic way of adapting plugins like LightBox and adjusting search filter to display desired
