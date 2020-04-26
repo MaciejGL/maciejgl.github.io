@@ -1937,26 +1937,6 @@ section {
 }
 
 @media (min-width: 768px) {
-  .portfolio .project:nth-child(2) {
-    -webkit-transition-delay: .4s;
-            transition-delay: .4s;
-  }
-  .portfolio .project:nth-child(3) {
-    -webkit-transition-delay: .2s;
-            transition-delay: .2s;
-  }
-  .portfolio .project:nth-child(4) {
-    -webkit-transition-delay: .3s;
-            transition-delay: .3s;
-  }
-  .portfolio .project:nth-child(5) {
-    -webkit-transition-delay: .6s;
-            transition-delay: .6s;
-  }
-  .portfolio .project:nth-child(6) {
-    -webkit-transition-delay: .1s;
-            transition-delay: .1s;
-  }
   .portfolio p {
     font-size: 0.9rem;
   }

@@ -136,27 +136,6 @@
 
 @media (min-width: $bp-medium) {
     .portfolio {
-        .project {
-            &:nth-child(2) {
-                transition-delay: .4s;
-            }
-
-            &:nth-child(3) {
-                transition-delay: .2s;
-            }
-
-            &:nth-child(4) {
-                transition-delay: .3s;
-            }
-
-            &:nth-child(5) {
-                transition-delay: .6s;
-            }
-
-            &:nth-child(6) {
-                transition-delay: .1s;
-            }
-        }
 
         p {
             font-size: 0.9rem;
