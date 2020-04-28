@@ -144,12 +144,14 @@ window.addEventListener('scroll', () => {
     appearOnScroll(document.getElementById('abilitie2'))
     appearOnScroll(document.getElementById('abilitie3'))
     // Portfolio
+
     appearOnScroll(document.getElementById('projectPort1'))
     appearOnScroll(document.getElementById('projectPort2'))
     appearOnScroll(document.getElementById('projectPort3'))
     appearOnScroll(document.getElementById('projectPort4'))
     appearOnScroll(document.getElementById('projectPort5'))
     appearOnScroll(document.getElementById('projectPort6'))
+    appearOnScroll(document.getElementById('projectPort7'))
 
 })
 
