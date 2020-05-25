@@ -1,384 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/fc0bcca8a3.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fc0bcca8a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Maciej Glowakci - Frontend Developer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-
-        <header class="header">
-            <nav>
-                <ul>
-                    <li><a href="#profile"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M299.6 289.8c0-117.1 95.3-212.4 212.4-212.4 117.1 0 212.4 95.3 212.4 212.4 0 117.1-95.3 212.4-212.4 212.4-117.1 0-212.4-95.3-212.4-212.4zM881.2 755.6v159.2c0 17.6-14.3 31.9-31.9 31.9H174.7c-17.6 0-31.9-14.3-31.9-31.9V755.6c0-59.3 23.1-115.1 65-157.1 42-42 97.7-65.1 157.1-65.2h4l3.5 2c42.3 24.1 90.6 36.9 139.6 36.9s97.3-12.8 139.6-36.9l3.5-2h4c59.3 0 115.1 23.2 157.1 65.2 41.9 42 65 97.8 65 157.1z"/></svg>About</a>
-                    </li>
-                    <li><a href="#skills"><svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path class="heroicon-ui" d="M20.59 12l-3.3-3.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 0 1-1.42 1.4l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.42 1.4L3.4 12zm7.56 8.24a1 1 0 0 1-1.94-.48l4-16a1 1 0 1 1 1.94.48l-4 16z"/></svg>
-                        Skills</a>
-                    </li>
-                    <li><a href="#portfolio"><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 12H1v6a2 2 0 002 2h14a2 2 0 002-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 012-2h4a2 2 0 012 2v1h4a2 2 0 012 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg>Portfolio</a>
-                    </li>
-                    <li><a href="#contact"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M908.5 194l-11.2 10.6-11.5 10.9-375.3 357.3-372.6-357.2-11.4-10.9-11.1-10.6c10.6-7.3 23.3-11.6 37.1-11.6h719c13.7 0 26.5 4.2 37 11.5z"/><path d="M937 248v528c0 36.1-29.4 65.5-65.5 65.5h-719c-36.1 0-65.5-29.4-65.5-65.5V248c0-7.7 1.3-15.2 3.8-22.1l12.2 11.7 14 13.4 393.5 377.1L907 250.7l13.9-13.2 12.2-11.6c2.5 6.8 3.9 14.3 3.9 22.1z"/></svg>Contact</a>
-                    </li>
-                </ul>
-                <div class="burger">
-                    <i class="fas fa-bars show"></i>
-                    <i class="fas fa-times"></i>
-                </div>
-            </nav>
-            <img src="images/ai11280-min.png" alt="AI logo">
-            <div class="description">
-                <h1>I am</h1>
-                <h1>Maciej Glowacki</h1>
-                <h2><span>F</span>rontend <span>D</span>eveloper</h2>
-                <!-- <h2><span>D</span>reamer</h2>
+      <header class="header">
+        <nav>
+          <ul>
+            <li>
+              <a href="#profile">
+                <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M299.6 289.8c0-117.1 95.3-212.4 212.4-212.4 117.1 0 212.4 95.3 212.4 212.4 0 117.1-95.3 212.4-212.4 212.4-117.1 0-212.4-95.3-212.4-212.4zM881.2 755.6v159.2c0 17.6-14.3 31.9-31.9 31.9H174.7c-17.6 0-31.9-14.3-31.9-31.9V755.6c0-59.3 23.1-115.1 65-157.1 42-42 97.7-65.1 157.1-65.2h4l3.5 2c42.3 24.1 90.6 36.9 139.6 36.9s97.3-12.8 139.6-36.9l3.5-2h4c59.3 0 115.1 23.2 157.1 65.2 41.9 42 65 97.8 65 157.1z"
+                  />
+                </svg>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <svg
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="heroicon-ui"
+                    d="M20.59 12l-3.3-3.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 0 1-1.42 1.4l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.42 1.4L3.4 12zm7.56 8.24a1 1 0 0 1-1.94-.48l4-16a1 1 0 1 1 1.94.48l-4 16z"
+                  />
+                </svg>
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio">
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9 12H1v6a2 2 0 002 2h14a2 2 0 002-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 012-2h4a2 2 0 012 2v1h4a2 2 0 012 2v6h-9V9H9v2zm3-8V2H8v1h4z"
+                  />
+                </svg>
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M908.5 194l-11.2 10.6-11.5 10.9-375.3 357.3-372.6-357.2-11.4-10.9-11.1-10.6c10.6-7.3 23.3-11.6 37.1-11.6h719c13.7 0 26.5 4.2 37 11.5z"
+                  />
+                  <path
+                    d="M937 248v528c0 36.1-29.4 65.5-65.5 65.5h-719c-36.1 0-65.5-29.4-65.5-65.5V248c0-7.7 1.3-15.2 3.8-22.1l12.2 11.7 14 13.4 393.5 377.1L907 250.7l13.9-13.2 12.2-11.6c2.5 6.8 3.9 14.3 3.9 22.1z"
+                  />
+                </svg>
+                Contact
+              </a>
+            </li>
+          </ul>
+          <div class="burger">
+            <i class="fas fa-bars show"></i>
+            <i class="fas fa-times"></i>
+          </div>
+        </nav>
+        <img src="images/ai11280-min.png" alt="AI logo" />
+        <div class="description">
+          <h1>I am</h1>
+          <h1>Maciej Glowacki</h1>
+          <h2>
+            <span>F</span>
+            rontend
+            <span>D</span>
+            eveloper
+          </h2>
+          <!-- <h2><span>D</span>reamer</h2>
                 <h2><span>C</span>hef</h2> -->
-                <a class="button" href="#contact">Contact</a>
+          <a class="button" href="#contact">Contact</a>
+        </div>
+      </header>
+
+      <main class="main">
+        <!-- ===========================SKILLS==================================== -->
+        <!-- ===========================SKILLS==================================== -->
+        <!-- ===========================SKILLS==================================== -->
+
+        <section class="skills" id="skills">
+          <a href="#skills">
+            <span><i class="fas fa-chevron-down"></i></span>
+            Check more
+          </a>
+          <h1>
+            My
+            <span>S</span>
+            kills
+          </h1>
+          <ul>
+            <li class="checked" id="learned">I understand</li>
+            <li id="toLearn">I'm learning</li>
+          </ul>
+          <article>
+            <div class="skillContainer" id="skill1" data-status="learned">
+              <div class="imgBorder">
+                <img src="images/html.jpeg" alt="HTML logo" />
+              </div>
+              <h3>HTML</h3>
+              <p>
+                I know HTML5 and how valuable are semantic markups. Deep
+                understanding of correct using HTML helps me to construct
+                readable sites.
+              </p>
             </div>
+            <div class="skillContainer" id="skill2" data-status="learned">
+              <div class="imgBorder">
+                <img src="images/css.jpeg" alt="CSS logo" />
+              </div>
+              <h3>CSS</h3>
+              <p>
+                In my projects I learned how to create responsive good looking
+                websites. I feel very confident with Flex and Grid. Also can use
+                Sass/Scss.
+              </p>
+            </div>
+            <div class="skillContainer" id="skill3" data-status="learned">
+              <div class="imgBorder">
+                <img src="images/javascript.jpeg" alt="JavaScript logo" />
+              </div>
+              <h3>JavaScript</h3>
+              <p>
+                The logic of JavaScript seems to be difficult but everyday by
+                practicind code I feel more confident. I understand ES6, OOP,
+                DOM manipulations, Api etc.
+              </p>
+            </div>
+            <div class="skillContainer" id="skill4" data-status="learned">
+              <h3>and few more...</h3>
+              <div class="images">
+                <img src="images/bootstrap.jpeg" alt="Bootstrap logo" />
+                <img src="images/jquery.jpeg" alt="JavaScript logo" />
+                <img src="images/sass.jpeg" alt="JavaScript logo" />
+              </div>
+            </div>
+            <div class="skillContainer unvisible" data-status="toLearn">
+              <div class="imgBorder">
+                <img src="images/react.jpeg" alt="React.js logo" />
+              </div>
+              <h3>React.js</h3>
+              <p>
+                Simply, I love to learn about React. Everything in it seems to
+                be fascinating. My goal is to be fluent in this framework.
+              </p>
+            </div>
+            <div class="skillContainer unvisible" data-status="toLearn">
+              <div class="imgBorder">
+                <img src="images/nodejs.jpeg" alt="Node.js logo" />
+              </div>
+              <h3>Node.js</h3>
+              <p>
+                Understanding Node is one of my next steps on path to be a
+                qualified programmer.
+              </p>
+            </div>
+            <div class="skillContainer unvisible" data-status="toLearn">
+              <div class="imgBorder">
+                <img src="images/mongodb.png" alt="MongoDB logo" />
+              </div>
+              <h3>MongoDB</h3>
+              <p>
+                As soon I will accomplish my previous goals I'll sit down to
+                learn MongoDB.
+              </p>
+            </div>
+          </article>
+        </section>
 
-        </header>
+        <!-- ============================LATEST PROJECTS============================== -->
+        <!-- ============================LATEST PROJECTS============================== -->
+        <!-- ============================LATEST PROJECTS============================== -->
 
-        <main class="main">
-            <!-- ===========================SKILLS==================================== -->
-            <!-- ===========================SKILLS==================================== -->
-            <!-- ===========================SKILLS==================================== -->
+        <section class="latestProject">
+          <h1>
+            Latest
+            <span>P</span>
+            roject
+          </h1>
+          <article class="latestProjectWrapper">
+            <div class="projectImages" id="project1">
+              <img src="images/portfolio/site3.jpeg" alt="portfolio" />
+              <img src="images/portfolio/site2.jpeg" alt="portfolio" />
+              <img src="images/portfolio/site1.jpeg" alt="portfolio" />
+            </div>
+            <div class="description" id="project2">
+              <h2>Maciej Glowacki - Portfolio</h2>
+              <p>
+                My personal portfolio is my most recent project I have finished.
+                I'm super excited about this one. Every single step of making it
+                helped to improve all of my skills and learn new things.
+              </p>
+              <a class="button" href="#">Website</a>
+              <a
+                class="button"
+                href="https://github.com/MaciejGL/maciejgl.github.io"
+                target="_blank"
+              >
+                Check Code
+              </a>
+            </div>
+          </article>
+        </section>
 
-            <section class="skills" id="skills">
-                <a href="#skills"><span><i class="fas fa-chevron-down"></i></span>Check more</a>
-                <h1>My <span>S</span>kills</h1>
-                <ul>
-                    <li class="checked" id="learned">I understand</li>
-                    <li id="toLearn">I'm learning</li>
-                </ul>
-                <article>
-                    <div class="skillContainer" id="skill1" data-status="learned">
-                        <div class="imgBorder"><img src="images/html.jpeg" alt="HTML logo"></div>
-                        <h3>HTML</h3>
-                        <p>I know HTML5 and how valuable are semantic markups. Deep understanding of correct using
-                            HTML
-                            helps me to construct readable sites. </p>
-                    </div>
-                    <div class="skillContainer" id="skill2" data-status="learned">
-                        <div class="imgBorder"><img src="images/css.jpeg" alt="CSS logo"></div>
-                        <h3>CSS</h3>
-                        <p>In my projects I learned how to create responsive good looking websites. I feel very
-                            confident with Flex and Grid. Also can use Sass/Scss.</p>
-                    </div>
-                    <div class="skillContainer" id="skill3" data-status="learned">
-                        <div class="imgBorder"><img src="images/javascript.jpeg" alt="JavaScript logo"></div>
-                        <h3>JavaScript</h3>
-                        <p>The logic of JavaScript seems to be difficult but everyday by practicind code I feel more
-                            confident. I understand ES6, OOP, DOM manipulations, Api etc.</p>
-                    </div>
-                    <div class="skillContainer" id="skill4" data-status="learned">
+        <!--==============================POKE=================================== -->
+        <!--==============================POKE=================================== -->
+        <!--==============================POKE=================================== -->
 
-                        <h3>and few more...</h3>
-                        <div class="images">
-                            <img src="images/bootstrap.jpeg" alt="Bootstrap logo">
-                            <img src="images/jquery.jpeg" alt="JavaScript logo">
-                            <img src="images/sass.jpeg" alt="JavaScript logo">
-                        </div>
-                    </div>
-                    <div class="skillContainer unvisible" data-status="toLearn">
-                        <div class="imgBorder"><img src="images/react.jpeg" alt="React.js logo"></div>
-                        <h3>React.js</h3>
-                        <p>Simply, I love to learn about React. Everything in it seems to be fascinating. My goal is to
-                            be fluent in this framework.</p>
-                    </div>
-                    <div class="skillContainer unvisible" data-status="toLearn">
-                        <div class="imgBorder"><img src="images/nodejs.jpeg" alt="Node.js logo"></div>
-                        <h3>Node.js</h3>
-                        <p>Understanding Node is one of my next steps on path to be a qualified programmer.</p>
-                    </div>
-                    <div class="skillContainer unvisible" data-status="toLearn">
-                        <div class="imgBorder"><img src="images/mongodb.png" alt="MongoDB logo"></div>
-                        <h3>MongoDB</h3>
-                        <p>As soon I will accomplish my previous goals I'll sit down to learn MongoDB.</p>
-                    </div>
-                </article>
-            </section>
+        <section class="poke">
+          <p>
+            It's not only about coding, it's about having fun in what are You
+            doing.
+          </p>
+          <img src="images/shape5.jpg" alt="building" />
+        </section>
+        <!-- ======================================== PROFILE ====================================== -->
+        <!-- ======================================== PROFILE ====================================== -->
+        <!-- ======================================== PROFILE ====================================== -->
 
-            <!-- ============================LATEST PROJECTS============================== -->
-            <!-- ============================LATEST PROJECTS============================== -->
-            <!-- ============================LATEST PROJECTS============================== -->
+        <section class="profile" id="profile">
+          <h1>
+            My
+            <span>P</span>
+            rofile
+          </h1>
+          <img
+            src="images/profilePicture.jpg"
+            id="profile1"
+            alt="My picture - Maciej Glowacki"
+          />
+          <h3>Maciej Glowacki</h3>
+          <h4>Junior Frontend Developer</h4>
+          <p>
+            Hi, I am Maciej Glowacki a future Frontend Developer. I am that type
+            of person who wants to finish what he has started. My main goal is
+            to do what I enjoy in life and this is programming :) I've found a
+            great fun in developing skills and knowledge. To graduate my skills
+            and knowledge I want to start work as a developer and do code on
+            daily basis.
+          </p>
+          <h2>I love when everything is on right place and it looks smooth</h2>
+          <a class="button" href="#portfolio">My Portfolio</a>
+        </section>
 
-            <section class="latestProject">
-                <h1>Latest <span>P</span>roject</h1>
-                <article class="latestProjectWrapper">
-                    <div class="projectImages" id="project1"> <img src="images/portfolio/site3.jpeg" alt="portfolio">
-                        <img src="images/portfolio/site2.jpeg" alt="portfolio">
-                        <img src="images/portfolio/site1.jpeg" alt="portfolio">
+        <!-- ========================================= Abilities ================================= -->
+        <!-- ========================================= Abilities ================================= -->
+        <!-- ========================================= Abilities ================================= -->
 
+        <section class="abilities">
+          <div class="abilitieContainer" id="abilitie1">
+            <img src="images/svg/calendar.svg" alt="code brackets" />
+            <h3>Consistancy</h3>
+            <p>
+              I believe we can master everything, but it also require a time.
+              The key is to practice everyday. That why I put all of my free
+              time to code.
+            </p>
+          </div>
+          <div class="abilitieContainer" id="abilitie2">
+            <img src="images/svg/book.svg" alt="CSS logo" />
+            <h3>Up to date</h3>
+            <p>
+              To become good in things we do, we have to follow news in our
+              industry. Instead of watching funny animals on YouTube I always
+              looking for more interesting news and technologies from web
+              development.
+            </p>
+          </div>
+          <div class="abilitieContainer" id="abilitie3">
+            <img src="images/svg/code.svg" alt="JavaScript logo" />
+            <h3>Clean Code</h3>
+            <p>
+              Coding is fun but it can become a tough thing when it's complex.
+              To make it easier I master how make my code DRY, Semantic, modern,
+              Up to date and reusable
+            </p>
+          </div>
+        </section>
 
-                    </div>
-                    <div class="description" id="project2">
-                        <h2>Maciej Glowacki - Portfolio</h2>
-                        <p>My personal portfolio is my most recent project I have finished. I'm super excited about this
-                            one. Every single step of making it helped to improve all of my skills and learn new things.
-                        </p>
-                        <a class="button" href="#">Website</a>
-                        <a class="button" href="https://github.com/MaciejGL/maciejgl.github.io" target="_blank">Check
-                            Code</a>
+        <!-- ========================================= PORTFOLIO ================================= -->
+        <!-- ========================================= PORTFOLIO ================================= -->
+        <!-- ========================================= PORTFOLIO ================================= -->
 
-                    </div>
-                </article>
+        <section class="portfolio" id="portfolio">
+          <h1 class="animated jackInTheBox">
+            My
+            <span>P</span>
+            ortfolio
+          </h1>
+          <ul>
+            <li class="checked" id="all">All Projects</li>
+            <li id="commercial">Commercial</li>
+            <li id="course">Courses</li>
+          </ul>
 
-            </section>
+          <article class="projects" id="projects"></article>
+          <h2>
+            Like what You see? Contact me to discuss about possible cooperation!
+          </h2>
+          <a class="button" href="#contact">Contact Me</a>
+        </section>
+        <section class="schools">
+          <img src="images/treehouse.jpeg" alt="TreeHouse Logo" />
+          <img src="images/websamurajlogo.jpeg" alt="WebSamuraj Logo" />
+          <img src="images/freecodecamp.jpeg" alt="FreeCodeCamp Logo" />
+        </section>
+        <section class="contact" id="contact">
+          <h1>
+            Contact
+            <span>M</span>
+            e
+          </h1>
+          <div class="contactInf">
+            <p>I am available for new opportunities.</p>
+            <p>Can't wait for the next project! Could it be yours?</p>
 
-            <!--==============================POKE=================================== -->
-            <!--==============================POKE=================================== -->
-            <!--==============================POKE=================================== -->
+            <p>Maciej Glowacki</p>
+            <p>Mogens Thorsens Gate 10</p>
+            <p>0264, Oslo, Norway</p>
+            <p>+47 40 56 23 04</p>
 
-
-            <section class="poke">
-                <p>It's not only about coding, it's about having fun in what are You doing.</p>
-                <img src="images/shape5.jpg" alt="building">
-            </section>
-            <!-- ======================================== PROFILE ====================================== -->
-            <!-- ======================================== PROFILE ====================================== -->
-            <!-- ======================================== PROFILE ====================================== -->
-
-            <section class="profile" id="profile">
-                <h1>My <span>P</span>rofile</h1>
-                <img src='images/profilePicture.jpg' id="profile1" alt="My picture - Maciej Glowacki">
-                <h3>Maciej Glowacki</h3>
-                <h4>Junior Frontend Developer</h4>
-                <p>Hi, I am Maciej Glowacki a future Frontend Developer. I am that type of person who wants to finish
-                    what he has
-                    started. My main goal is to do what I enjoy in life and this is programming :) I've found a great
-                    fun in developing skills and knowledge. To graduate my skills and knowledge I want to start work as
-                    a developer and do code on daily basis.</p>
-                <h2>I love when everything is on right place and it looks smooth</h2>
-                <a class="button" href="#portfolio">My Portfolio</a>
-            </section>
-
-            <!-- ========================================= Abilities ================================= -->
-            <!-- ========================================= Abilities ================================= -->
-            <!-- ========================================= Abilities ================================= -->
-
-            <section class="abilities">
-                <div class="abilitieContainer" id="abilitie1">
-                    <img src="images/svg/calendar.svg" alt="code brackets">
-                    <h3>Consistancy</h3>
-                    <p>I believe we can master everything, but it also require a time. The key is to practice
-                        everyday. That why I put all of my free time to code.</p>
-                </div>
-                <div class="abilitieContainer" id="abilitie2">
-                    <img src="images/svg/book.svg" alt="CSS logo">
-                    <h3>Up to date</h3>
-                    <p>To become good in things we do, we have to follow news in our industry. Instead of watching
-                        funny animals on YouTube I always looking for more interesting news and technologies from
-                        web development.</p>
-                </div>
-                <div class="abilitieContainer" id="abilitie3">
-                    <img src="images/svg/code.svg" alt="JavaScript logo">
-                    <h3>Clean Code</h3>
-                    <p>Coding is fun but it can become a tough thing when it's complex. To make it easier I master how
-                        make my code
-                        DRY, Semantic, modern, Up to date and reusable</p>
-                </div>
-            </section>
-
-            <!-- ========================================= PORTFOLIO ================================= -->
-            <!-- ========================================= PORTFOLIO ================================= -->
-            <!-- ========================================= PORTFOLIO ================================= -->
-
-            <section class="portfolio" id="portfolio">
-                <h1 class="animated jackInTheBox">My <span>P</span>ortfolio</h1>
-                <ul>
-                    <li class="checked" id="all">All Projects</li>
-                    <li id="commercial">Commercial</li>
-                    <li id="course">Courses</li>
-                </ul>
-
-                <article class="projects">
-                    <div class="project" id="projectPort1" data-all="all" data-status="commercial">
-                        <img src="images/portfolio/mgportfolio.jpeg" alt="Maciej Glowacki - Portfolio">
-                        <h3>My personal portfolio</h3>
-                        <p>My own project from scratch. After 6 months of learning I decided to create my own site to
-                            possibly promote my skills. Technologies used: HTML CSS/SASS JS</p>
-                        <div class="buttons">
-                            <a href="https://maciejgl.github.io" class="button" target="_blank">Live</a><a href="https://github.com/MaciejGL/maciejgl.github.io" class="button" target="_blank">Code</a>
-                        </div>
-
-                    </div>
-                    <div class="project" id="projectPort2" data-all="all" data-status="course">
-                        <img src="images/portfolio/inviteSomeoneApp.jpg" alt="InviteSomeone App TreeHouse">
-                        <h3>InviteSomeone - App</h3>
-                        <p>Application to create a list of people we want to invite. In this you can assign if the
-                            person has responded to come, update a name or remove the person. All data is stored
-                            dynamicly on localStorage of users browser.</p>
-                        <div class="buttons">
-                            <a href="https://maciejgl.github.io/Invitation-List-App" class="button" target="_blank">Live</a><a href="https://github.com/MaciejGL/Invitation-List-App" class="button" target="_blank">Code</a>
-                        </div>
-                    </div>
-                    <div class="project" id="projectPort3" data-all="all" data-status="course">
-                        <img src="images/portfolio/employees.jpeg" alt="Employees Directory with search method - API">
-                        <h3>Employees Directory - API</h3>
-                        <p>Simple app using API to get random Employees list plus JavaScript to filter in all provided
-                            data of employees.</p>
-                        <div class="buttons">
-                            <a href="https://maciejgl.github.io/Project-08-API-Employee-Directory" class="button" target="_blank">Live</a><a href="https://github.com/MaciejGL/Project-08-API-Employee-Directory" class="button" target="_blank">Code</a>
-                        </div>
-                    </div>
-                    <div class="project" id="projectPort4" data-all="all" data-status="course">
-                        <img src="images/portfolio/dashboard.jpeg" alt="Dashboard App with charts plugins">
-                        <h3>WebApp Dashboard</h3>
-                        <p>Responsive Dashboard - I used for it charts plugins and localStorage to set and get settings.
-                        </p>
-                        <div class="buttons">
-                            <a href="https://maciejgl.github.io/Project-07-WebApp-Dashboard" class="button" target="_blank">Live</a><a href="https://github.com/MaciejGL/Project-07-WebApp-Dashboard" class="button" target="_blank">Code</a>
-                        </div>
-                    </div>
-                    <div class="project" id="projectPort5" data-all="all" data-status="course">
-                        <img src="images/portfolio/wheelofsucces.jpeg" alt="Game Wheel of success">
-                        <h3>Game - Wheel of success</h3>
-                        <p>Simple game using OOP and modules and DOM manipulation. This project was a great challange,
-                            but it helped to undestand better how to build a logic.</p>
-                        <div class="buttons">
-                            <a href="https://maciejgl.github.io/Project-06-Wheel-of-Success" class="button" target="_blank">Live</a><a href="https://github.com/MaciejGL/Project-06-Wheel-of-Success" class="button" target="_blank">Code</a>
-                        </div>
-                    </div>
-                    <div class="project" id="projectPort6" data-all="all" data-status="course">
-                        <img src="images/portfolio/portfolio01.jpeg" alt="First attend to website project">
-                        <h3>TreeHouse project 1</h3>
-                        <p>TreeHouse first project. Simply HTML and CSS. It was a very first project to intruduce how to
-                            build a website.</p>
-                        <div class="buttons">
-                            <a href="https://maciejgl.github.io/Project-01-Portfolio" class="button" target="_blank">Live</a><a href="https://github.com/MaciejGL/Project-01-Portfolio" class="button" target="_blank">Code</a>
-                        </div>
-                    </div>
-                    <div class="project" id="projectPort7" data-all="all" data-status="course">
-                        <img src="images/portfolio/responsivegallery1.jpeg" alt="Responsive Gallery with lightbox">
-                        <h3>Responsive Gallery</h3>
-                        <p>Basic way of adapting plugins like LightBox and adjusting search filter to display desired
-                            pictures.</p>
-                        <div class="buttons">
-                            <a href="https://maciejgl.github.io/Project-05-Responsive-Gallery" class="button" target="_blank">Live</a><a href="https://github.com/MaciejGL/Project-05-Responsive-Gallery" class="button" target="_blank">Code</a>
-                        </div>
-                    </div>
-                </article>
-                <h2>Like what You see? Contact me to discuss about possible cooperation!</h2>
-                <a class="button" href="#contact">Contact Me</a>
-            </section>
-            <section class="schools">
-
-                <img src="images/treehouse.jpeg" alt="TreeHouse Logo">
-                <img src="images/websamurajlogo.jpeg" alt="WebSamuraj Logo">
-                <img src="images/freecodecamp.jpeg" alt="FreeCodeCamp Logo">
-
-            </section>
-            <section class="contact" id="contact">
-                <h1>Contact <span>M</span>e</h1>
-                <div class="contactInf">
-                    <p>I am available for new opportunities.</p>
-                    <p>Can't wait for the next project! Could it be yours?</p>
-
-                    <p>Maciej Glowacki</p>
-                    <p>Mogens Thorsens Gate 10</p>
-                    <p>0264, Oslo, Norway</p>
-                    <p>+47 40 56 23 04</p>
-
-                    <div class="socials">
-                        <a href="https://www.linkedin.com/in/maciej-glowacki1/" target="_blank">
-                            <?xml version="1.0" ?>
-                            <!DOCTYPE svg
-                                PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
-                                height="67px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1"
-                                viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path
-                                    d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
-                                    style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff;" /></svg></a>
-                        <a href="https://github.com/MaciejGL" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512"
-                                viewBox="0 0 512 512">
-                                <title></title>
-                                <g id="icomoon-ignore">
-                                </g>
-                                <path
-                                    d="M256.004 6.321c-141.369 0-256.004 114.609-256.004 255.999 0 113.107 73.352 209.066 175.068 242.918 12.793 2.369 17.496-5.555 17.496-12.316 0-6.102-0.24-26.271-0.348-47.662-71.224 15.488-86.252-30.205-86.252-30.205-11.641-29.588-28.424-37.458-28.424-37.458-23.226-15.889 1.755-15.562 1.755-15.562 25.7 1.805 39.238 26.383 39.238 26.383 22.836 39.135 59.888 27.82 74.502 21.279 2.294-16.543 8.926-27.84 16.253-34.232-56.865-6.471-116.638-28.425-116.638-126.516 0-27.949 10.002-50.787 26.38-68.714-2.658-6.45-11.427-32.486 2.476-67.75 0 0 21.503-6.876 70.42 26.245 20.418-5.674 42.318-8.518 64.077-8.617 21.751 0.099 43.668 2.943 64.128 8.617 48.867-33.122 70.328-26.245 70.328-26.245 13.936 35.264 5.175 61.3 2.518 67.75 16.41 17.928 26.347 40.766 26.347 68.714 0 98.327-59.889 119.975-116.895 126.312 9.182 7.945 17.362 23.523 17.362 47.406 0 34.254-0.298 61.822-0.298 70.254 0 6.814 4.611 14.797 17.586 12.283 101.661-33.888 174.921-129.813 174.921-242.884 0-141.39-114.617-255.999-255.996-255.999z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=100001079132075" target="_blank">
-                            <?xml version="1.0" ?>
-                            <!DOCTYPE svg
-                                PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
-                                height="67px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1"
-                                viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path
-                                    d="M29.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M34,64C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z"
-                                    style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff;" /></svg></a>
-                    </div>
-                    <h3>m.glowacki01@gmail.com</h3>
-                </div>
-                <div class="form">
-                    <form name="contactform" method="POST" action="https://formspree.io/m.glowacki01@gmail.com">
-                        <input type="text" name="name" id="name" placeholder="Name" required>
-                        <input type="email" name="email" id="_replyto" placeholder="Email" required>
-                        <textarea name="message" id="text" placeholder="Message" required></textarea>
-                        <button type="submit" id="submit" name="submit" value="Send it">Send it</button>
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>&copy;Maciej Glowacki</p>
-            <nav class="footer">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                </ul>
-            </nav>
             <div class="socials">
-                <a href="https://www.linkedin.com/in/maciej-glowacki1/" target="_blank">
-                    <?xml version="1.0" ?>
-                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-                    <svg height="67px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1"
-                        viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path
-                            d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
-                            style="fill-rule:evenodd;clip-rule:evenodd;fill:#aaa;" /></svg></a>
-                <a href="https://github.com/MaciejGL" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512"
-                        viewBox="0 0 512 512">
-                        <title></title>
-                        <g id="icomoon-ignore">
-                        </g>
-                        <path
-                            d="M256.004 6.321c-141.369 0-256.004 114.609-256.004 255.999 0 113.107 73.352 209.066 175.068 242.918 12.793 2.369 17.496-5.555 17.496-12.316 0-6.102-0.24-26.271-0.348-47.662-71.224 15.488-86.252-30.205-86.252-30.205-11.641-29.588-28.424-37.458-28.424-37.458-23.226-15.889 1.755-15.562 1.755-15.562 25.7 1.805 39.238 26.383 39.238 26.383 22.836 39.135 59.888 27.82 74.502 21.279 2.294-16.543 8.926-27.84 16.253-34.232-56.865-6.471-116.638-28.425-116.638-126.516 0-27.949 10.002-50.787 26.38-68.714-2.658-6.45-11.427-32.486 2.476-67.75 0 0 21.503-6.876 70.42 26.245 20.418-5.674 42.318-8.518 64.077-8.617 21.751 0.099 43.668 2.943 64.128 8.617 48.867-33.122 70.328-26.245 70.328-26.245 13.936 35.264 5.175 61.3 2.518 67.75 16.41 17.928 26.347 40.766 26.347 68.714 0 98.327-59.889 119.975-116.895 126.312 9.182 7.945 17.362 23.523 17.362 47.406 0 34.254-0.298 61.822-0.298 70.254 0 6.814 4.611 14.797 17.586 12.283 101.661-33.888 174.921-129.813 174.921-242.884 0-141.39-114.617-255.999-255.996-255.999z">
-                        </path>
-                    </svg>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100001079132075" target="_blank">
-                    <?xml version="1.0" ?>
-                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-                    <svg height="67px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1"
-                        viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path
-                            d="M29.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M34,64C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z"
-                            style="fill-rule:evenodd;clip-rule:evenodd;fill:#aaa;" /></svg></a>
+              <a
+                href="https://www.linkedin.com/in/maciej-glowacki1/"
+                target="_blank"
+              >
+                <svg
+                  height="67px"
+                  id="Layer_1"
+                  style="enable-background: new 0 0 67 67;"
+                  version="1.1"
+                  viewBox="0 0 67 67"
+                  width="67px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
+                    style="fill-rule: evenodd; clip-rule: evenodd; fill: #fff;"
+                  />
+                </svg>
+              </a>
+              <a href="https://github.com/MaciejGL" target="_blank">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="512"
+                  height="512"
+                  viewBox="0 0 512 512"
+                >
+                  <title></title>
+                  <g id="icomoon-ignore"></g>
+                  <path
+                    d="M256.004 6.321c-141.369 0-256.004 114.609-256.004 255.999 0 113.107 73.352 209.066 175.068 242.918 12.793 2.369 17.496-5.555 17.496-12.316 0-6.102-0.24-26.271-0.348-47.662-71.224 15.488-86.252-30.205-86.252-30.205-11.641-29.588-28.424-37.458-28.424-37.458-23.226-15.889 1.755-15.562 1.755-15.562 25.7 1.805 39.238 26.383 39.238 26.383 22.836 39.135 59.888 27.82 74.502 21.279 2.294-16.543 8.926-27.84 16.253-34.232-56.865-6.471-116.638-28.425-116.638-126.516 0-27.949 10.002-50.787 26.38-68.714-2.658-6.45-11.427-32.486 2.476-67.75 0 0 21.503-6.876 70.42 26.245 20.418-5.674 42.318-8.518 64.077-8.617 21.751 0.099 43.668 2.943 64.128 8.617 48.867-33.122 70.328-26.245 70.328-26.245 13.936 35.264 5.175 61.3 2.518 67.75 16.41 17.928 26.347 40.766 26.347 68.714 0 98.327-59.889 119.975-116.895 126.312 9.182 7.945 17.362 23.523 17.362 47.406 0 34.254-0.298 61.822-0.298 70.254 0 6.814 4.611 14.797 17.586 12.283 101.661-33.888 174.921-129.813 174.921-242.884 0-141.39-114.617-255.999-255.996-255.999z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100001079132075"
+                target="_blank"
+              >
+                <svg
+                  height="67px"
+                  style="enable-background: new 0 0 67 67;"
+                  version="1.1"
+                  viewBox="0 0 67 67"
+                  width="67px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M29.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M34,64C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z"
+                    style="fill-rule: evenodd; clip-rule: evenodd; fill: #fff;"
+                  />
+                </svg>
+              </a>
             </div>
-        </footer>
-
-
-
-
-
-
-
+            <h3>m.glowacki01@gmail.com</h3>
+          </div>
+          <div class="form">
+            <form
+              name="contactform"
+              method="POST"
+              action="https://formspree.io/m.glowacki01@gmail.com"
+            >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="_replyto"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                name="message"
+                id="text"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit" id="submit" name="submit" value="Send it">
+                Send it
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy;Maciej Glowacki</p>
+        <nav class="footer">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/maciej-glowacki1/"
+            target="_blank"
+          >
+            <svg
+              height="67px"
+              style="enable-background: new 0 0 67 67;"
+              version="1.1"
+              viewBox="0 0 67 67"
+              width="67px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
+                style="fill-rule: evenodd; clip-rule: evenodd; fill: #aaa;"
+              />
+            </svg>
+          </a>
+          <a href="https://github.com/MaciejGL" target="_blank">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="512"
+              height="512"
+              viewBox="0 0 512 512"
+            >
+              <title></title>
+              <g></g>
+              <path
+                d="M256.004 6.321c-141.369 0-256.004 114.609-256.004 255.999 0 113.107 73.352 209.066 175.068 242.918 12.793 2.369 17.496-5.555 17.496-12.316 0-6.102-0.24-26.271-0.348-47.662-71.224 15.488-86.252-30.205-86.252-30.205-11.641-29.588-28.424-37.458-28.424-37.458-23.226-15.889 1.755-15.562 1.755-15.562 25.7 1.805 39.238 26.383 39.238 26.383 22.836 39.135 59.888 27.82 74.502 21.279 2.294-16.543 8.926-27.84 16.253-34.232-56.865-6.471-116.638-28.425-116.638-126.516 0-27.949 10.002-50.787 26.38-68.714-2.658-6.45-11.427-32.486 2.476-67.75 0 0 21.503-6.876 70.42 26.245 20.418-5.674 42.318-8.518 64.077-8.617 21.751 0.099 43.668 2.943 64.128 8.617 48.867-33.122 70.328-26.245 70.328-26.245 13.936 35.264 5.175 61.3 2.518 67.75 16.41 17.928 26.347 40.766 26.347 68.714 0 98.327-59.889 119.975-116.895 126.312 9.182 7.945 17.362 23.523 17.362 47.406 0 34.254-0.298 61.822-0.298 70.254 0 6.814 4.611 14.797 17.586 12.283 101.661-33.888 174.921-129.813 174.921-242.884 0-141.39-114.617-255.999-255.996-255.999z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100001079132075"
+            target="_blank"
+          >
+            <svg
+              height="67px"
+              style="enable-background: new 0 0 67 67;"
+              version="1.1"
+              viewBox="0 0 67 67"
+              width="67px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M29.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M34,64C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z"
+                style="fill-rule: evenodd; clip-rule: evenodd; fill: #aaa;"
+              />
+            </svg>
+          </a>
+        </div>
+      </footer>
     </div>
-    <script src="js/main.js"></script>
-</body>
-
+    <script type="module" src="js/portfolio.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
