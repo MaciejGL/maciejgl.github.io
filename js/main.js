@@ -89,6 +89,7 @@ const displayCorrectList = (e, buttons, list, show = null, hide = null) => {
     }
   });
 };
+
 skillsSection.addEventListener("click", (e) => {
   if (e.target.tagName == "LI") {
     displayCorrectList(e, liSkills, skills, "visible", "unvisible");
@@ -155,22 +156,29 @@ window.addEventListener("scroll", () => {
   appearOnScroll(document.getElementById("skill2"));
   appearOnScroll(document.getElementById("skill3"));
   appearOnScroll(document.getElementById("skill4"));
+  appearOnScroll(document.getElementById("skill5"));
+  appearOnScroll(document.getElementById("skill6"));
+  appearOnScroll(document.getElementById("skill7"));
+  appearOnScroll(document.getElementById("skill8"));
+  appearOnScroll(document.getElementById("skill9"));
+  appearOnScroll(document.getElementById("skill10"));
+  appearOnScroll(document.getElementById("skill11"));
   // Latest Project
   appearOnScroll(document.getElementById("project1"));
   appearOnScroll(document.getElementById("project2"));
   // abilities
-  appearOnScroll(document.getElementById("abilitie1"));
-  appearOnScroll(document.getElementById("abilitie2"));
+  // appearOnScroll(document.getElementById("abilitie1"));
+  // appearOnScroll(document.getElementById("abilitie2"));
   appearOnScroll(document.getElementById("abilitie3"));
   // Portfolio
 
-  appearOnScroll(document.getElementById("projectPort1"));
-  appearOnScroll(document.getElementById("projectPort2"));
-  appearOnScroll(document.getElementById("projectPort3"));
-  appearOnScroll(document.getElementById("projectPort4"));
-  appearOnScroll(document.getElementById("projectPort5"));
-  appearOnScroll(document.getElementById("projectPort6"));
-  appearOnScroll(document.getElementById("projectPort7"));
+  // appearOnScroll(document.getElementById("projectPort1"));
+  // appearOnScroll(document.getElementById("projectPort2"));
+  // appearOnScroll(document.getElementById("projectPort3"));
+  // appearOnScroll(document.getElementById("projectPort4"));
+  // appearOnScroll(document.getElementById("projectPort5"));
+  // appearOnScroll(document.getElementById("projectPort6"));
+  // appearOnScroll(document.getElementById("projectPort7"));
 });
 
 addDisplay();

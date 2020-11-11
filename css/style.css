@@ -971,8 +971,6 @@ section {
   align-items: center;
   text-align: center;
   transition: 0.6s ease-out;
-}
-.skillContainer:nth-child(1), .skillContainer:nth-child(2), .skillContainer:nth-child(3), .skillContainer:nth-child(4) {
   transform: translateY(30%);
   opacity: 0;
 }
@@ -1011,16 +1009,35 @@ section {
     max-width: 1100px;
   }
   .skills .skillContainer {
-    flex-basis: 33%;
+    flex-basis: 24%;
   }
   .skills .skillContainer:nth-child(2) {
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
   }
   .skills .skillContainer:nth-child(3) {
-    transition-delay: 0.4s;
+    transition-delay: 0.3s;
   }
   .skills .skillContainer:nth-child(4) {
-    flex-basis: 50%;
+    transition-delay: 0.5s;
+  }
+  .skills .skillContainer:nth-child(5) {
+    transition-delay: 0.7s;
+  }
+  .skills .skillContainer:nth-child(6) {
+    transition-delay: 0.9s;
+  }
+  .skills .skillContainer:nth-child(7) {
+    transition-delay: 1.1s;
+  }
+  .skills .skillContainer:nth-child(8) {
+    transition-delay: 1.3s;
+  }
+  .skills .skillContainer:nth-child(9) {
+    transition-delay: 1.5s;
+  }
+  .skills .skillContainer.extras {
+    margin-top: 20px;
+    flex-basis: 100%;
   }
   .skills .skillContainer .imgBorder {
     margin-top: 20px;
@@ -1375,8 +1392,6 @@ section {
   box-shadow: 5px 15px 10px 0px #142435, 0px 0px 2px 0px #142435;
   max-width: 250px;
   margin: 15px;
-  transform: translateY(50%);
-  opacity: 0;
   transition: 0.6s;
   cursor: default;
   overflow: hidden;
