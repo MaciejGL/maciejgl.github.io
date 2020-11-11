@@ -172,8 +172,8 @@ window.addEventListener("scroll", () => {
   appearOnScroll(document.getElementById("abilitie3"));
   // Portfolio
 
-  // appearOnScroll(document.getElementById("projectPort1"));
-  // appearOnScroll(document.getElementById("projectPort2"));
+  appearOnScroll(document.getElementById("projectPort1"));
+  appearOnScroll(document.getElementById("projectPort2"));
   // appearOnScroll(document.getElementById("projectPort3"));
   // appearOnScroll(document.getElementById("projectPort4"));
   // appearOnScroll(document.getElementById("projectPort5"));
